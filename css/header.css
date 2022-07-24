@@ -14,6 +14,11 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header_nav-link:hover {
+    color: #ef6c00;
 }
 ._promotion {
     color: #ef6c00;
@@ -30,6 +35,7 @@
 }
 .search-btn {
     width: 20px;
+    cursor: pointer;
 }
 .header_call-btn {
     border: 2px solid #ef6c00;
@@ -40,5 +46,38 @@
     color: #ef6c00;
     background-color: #f2f2f7;
     cursor: pointer;
+    transition: 0.5s;
 }
+.header_call-btn:hover {
+    background-color: #ef6c00;
+    color: #ffffff;
+}
+.header-mobile {
+    display: none;
+}
+/*===================================
+    MEDIA QUERIES FOR SMARTPHONES
+=====================================*/
+@media (min-width: 320px) and (max-width: 500px) {
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
 
+    }
+    .header_logo-mobile {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .burger-open-button {
+        background: none;
+        border: none;
+    }
+    #burger_btn {
+        width: 30px;
+    }
+}

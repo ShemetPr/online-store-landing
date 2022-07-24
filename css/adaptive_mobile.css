@@ -1,0 +1,258 @@
+@media (min-width: 320px) and (max-width: 500px) {
+    body {
+        max-width: 500px;
+
+    }
+    hr {
+        width: 220px;
+    }
+
+    /*===================================
+                PREVIEW
+=====================================*/
+    .preview {
+        max-width: 500px;
+        padding: 0 20px;
+        height: 475px;
+        position: relative;
+        overflow: hidden;
+    }
+    .preview-container {
+        padding-top: 3em;
+    }
+    #preview {
+        font-size: 22px;
+        text-align: center;
+    }
+    .preview_title-text {
+        font-size: 18px;
+        text-align: center;
+    }
+    .preview_title-text__red {
+        font-size: 18px;
+    }
+    .preview_backgroung-image {
+        display: none;
+    }
+    .preview_backgroung-image_mobile {
+        display: block;
+        width: 140px;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+    .preview_btn {
+        font-size: 18px;
+        padding: 15px 29px;
+        margin-top: 2em;
+    }
+    .preview_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+/*==================================
+        BACKGROUND PREVIEW
+====================================*/
+.background {
+    width: 500px;
+    height: 475px;
+}
+
+
+/*==================================
+                STEPS
+====================================*/
+#step {
+    font-size: 22px;
+}
+.step-item_image {
+    width: 90px;
+}
+.step-container-item_text {
+    font-size: 14px;
+}
+.step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+}
+.step-container_arrow {
+    display: none;
+}
+.step_btn {
+    display: none;
+}
+
+
+
+/*==================================
+                CATALOG
+====================================*/
+.slider-dotts {
+    display: none;
+}
+.slider_wrapper {
+    display: none;
+}
+.catalog {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#catalog-section-title {
+    font-size: 22px;
+}
+.slider_wrapper-mobile {
+    padding: 0.4em;
+    height: 510px;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #9c9c9c;
+}
+.slide-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 1em;
+}
+.catalog-item_image {
+    width: 220px;
+}
+#slide_title {
+    font-size: 18px;
+    text-align: center;
+}
+.slide-description_text {
+    font-size: 14px;
+}
+.price-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 3em;
+    padding-top: 0;
+} 
+.price_actual {
+    font-size: 18px;
+    color: #ef6c00;
+}
+.price_irrelevant {
+    font-size: 14px;
+}
+.catalog_btn {
+    font-size: 18px;
+    padding: 15px 29px;
+    margin: 0;
+    box-shadow: 0px 5px 5px #b6b6b6;
+}
+.prev, .next {
+    font-size: 20px;
+    box-shadow: none;
+}
+.slider-dotts_mobile {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em;
+}
+
+
+
+/*==================================
+                QUALITY
+====================================*/
+.quality {
+    padding-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+}
+.quality_item {
+    gap: 0.1em;
+}
+.quality-item_image {
+    width: 90px;
+}
+.quality-item_text {
+    font-size: 14px;
+}
+
+/*==================================
+                PROMOTION
+====================================*/
+.promotion {
+    max-width: 500px;
+    height: 400px;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #89F8FF, #FFEF5B);
+	animation: gradient 8s ease infinite;
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.promotion-description {
+    height: 240px;
+    align-items: center;
+}
+.promotion-title {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+.promotion-text {
+    font-size: 14px;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+}
+.promotion-btn {
+    font-size: 18px;
+    padding: 15px 29px;
+    margin-top: 0em;
+    box-shadow: 0px 5px 5px #b6b6b6;
+    margin: 0 auto;
+}
+.promotion-image {
+    padding-top: 1.5em;
+    width: 240px;
+}
+
+
+/*==================================
+            FEEDBACK FORM
+====================================*/
+.form {
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+.form-block {
+    width: 270px;
+}
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+}
+#form-title {
+    font-size: 22px;
+}
+.form-description {
+    font-size: 14px;
+}
+.form-block>input {
+    width: inherit;
+}
+}

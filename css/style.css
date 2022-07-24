@@ -1,21 +1,21 @@
 /*=================================
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1. PREVIEW
+2. PREVIEW BACKGROUND
+3. STEPS
+4. CATALOG SLIDER
+5. QUALITY
+6. PROMOTION GRADIENT BLOCK
+7. FEEDBACK FORM
+8. 
+!!!!!!!!!СТИЛИ ДЛЯ HEADER И FOOTER НАХОДЯТСЯ В ОТДЕЛЬНЫХ CSS ФАЙЛАХ!!!!!!!!!!
 
 ===================================*/
 
 body {
     max-width: 1440px;
-    margin: 0 auto !important;
-    padding: 0px 100px !important;
+    margin: 0 auto;
+    /*padding: 0px 100px;*/
     box-sizing: border-box;
     background-color: #f2f2f7;
     font-family: 'Exo 2', sans-serif;
@@ -27,15 +27,21 @@ hr {
     margin: 0 auto !important;
 }
 
+
+
+
 /*===================================
                 PREVIEW
 =====================================*/
 .preview {
+    max-width: 1440px;
+    padding: 0px 100px;
     height: 660px;
-    z-index: 5;
+    overflow: hidden;
+    position: relative;
 }
 .preview-container {
-    padding-top: 3em;
+    padding-top: 6em;
 }
 #preview {
     font-size: 45px;
@@ -66,8 +72,13 @@ hr {
     border-radius: 16px;
     margin-top: 80px;
     cursor: pointer;
-    transition: 1s;
-    box-shadow: 5px 5px 5px #535353;
+    transition: 0.5s;
+    letter-spacing: 0.06em;
+}
+.preview_btn:hover {
+    box-shadow: 0px 0px 10px #ef6c00;
+    background-color: #ffffff;
+    color: #ef6c00;
 }
 .preview_backgroung-image {
     width: 415px;
@@ -77,25 +88,33 @@ hr {
     justify-content: space-around;
     align-items: center;
 }
+.preview_backgroung-image_mobile {
+    display: none;
+}
+
+
+
+
+
+
 /*===================================
         PREVIEW BACKGROUND
 =====================================*/
 
-/* @keyframes move {
+ @keyframes move {
     100% {
         transform: translate3d(0, 0, 1px) rotate(360deg);
     }
 }
 
 .background {
-    
+    position: absolute;
     width: 1440px;
-    height: 600px;
+    height: 660px;
     top: 0;
     left: 0;
-    background: #3E1E68;
     overflow: hidden;
-    z-index: 1;
+    z-index: -1;
 }
 
 .background span {
@@ -112,7 +131,7 @@ hr {
 
 
 .background span:nth-child(0) {
-    color: #583C87;
+    color: #F29549;
     top: 20%;
     left: 95%;
     animation-duration: 19s;
@@ -130,7 +149,7 @@ hr {
     box-shadow: 40vmin 0 5.975623396366119vmin currentColor;
 }
 .background span:nth-child(2) {
-    color: #583C87;
+    color: #F29549;
     top: 56%;
     left: 79%;
     animation-duration: 15s;
@@ -139,7 +158,7 @@ hr {
     box-shadow: 40vmin 0 5.210196269812531vmin currentColor;
 }
 .background span:nth-child(3) {
-    color: #E45A84;
+    color: #F8B00C;
     top: 5%;
     left: 58%;
     animation-duration: 45s;
@@ -148,7 +167,7 @@ hr {
     box-shadow: 40vmin 0 5.346908162677102vmin currentColor;
 }
 .background span:nth-child(4) {
-    color: #583C87;
+    color: #F29549;
     top: 44%;
     left: 13%;
     animation-duration: 30s;
@@ -157,7 +176,7 @@ hr {
     box-shadow: 40vmin 0 5.1341326711038855vmin currentColor;
 }
 .background span:nth-child(5) {
-    color: #583C87;
+    color: #F29549;
     top: 8%;
     left: 34%;
     animation-duration: 7s;
@@ -166,7 +185,7 @@ hr {
     box-shadow: 40vmin 0 5.608730197269672vmin currentColor;
 }
 .background span:nth-child(6) {
-    color: #583C87;
+    color: #B04F00;
     top: 83%;
     left: 99%;
     animation-duration: 23s;
@@ -175,7 +194,7 @@ hr {
     box-shadow: 40vmin 0 5.441512854185172vmin currentColor;
 }
 .background span:nth-child(7) {
-    color: #E45A84;
+    color: #F8B00C;
     top: 73%;
     left: 55%;
     animation-duration: 55s;
@@ -184,7 +203,7 @@ hr {
     box-shadow: -40vmin 0 5.51529509687205vmin currentColor;
 }
 .background span:nth-child(8) {
-    color: #E45A84;
+    color: #F8B00C;
     top: 13%;
     left: 44%;
     animation-duration: 18s;
@@ -193,7 +212,7 @@ hr {
     box-shadow: 40vmin 0 5.085697200430469vmin currentColor;
 }
 .background span:nth-child(9) {
-    color: #E45A84;
+    color: #F8B00C;
     top: 52%;
     left: 77%;
     animation-duration: 12s;
@@ -211,7 +230,7 @@ hr {
     box-shadow: 40vmin 0 5.074244042578276vmin currentColor;
 }
 .background span:nth-child(11) {
-    color: #583C87;
+    color: #B04F00;
     top: 84%;
     left: 17%;
     animation-duration: 10s;
@@ -220,7 +239,7 @@ hr {
     box-shadow: -40vmin 0 5.802643482557588vmin currentColor;
 }
 .background span:nth-child(12) {
-    color: #583C87;
+    color: #F29549;
     top: 28%;
     left: 80%;
     animation-duration: 13s;
@@ -229,7 +248,7 @@ hr {
     box-shadow: 40vmin 0 5.875967139449188vmin currentColor;
 }
 .background span:nth-child(13) {
-    color: #583C87;
+    color: #F29549;
     top: 11%;
     left: 88%;
     animation-duration: 36s;
@@ -247,7 +266,7 @@ hr {
     box-shadow: -40vmin 0 5.266968840540629vmin currentColor;
 }
 .background span:nth-child(15) {
-    color: #583C87;
+    color: #B04F00;
     top: 4%;
     left: 15%;
     animation-duration: 29s;
@@ -256,7 +275,7 @@ hr {
     box-shadow: -40vmin 0 5.2845430937695514vmin currentColor;
 }
 .background span:nth-child(16) {
-    color: #583C87;
+    color: #F29549;
     top: 74%;
     left: 22%;
     animation-duration: 52s;
@@ -265,7 +284,7 @@ hr {
     box-shadow: -40vmin 0 5.49100596837793vmin currentColor;
 }
 .background span:nth-child(17) {
-    color: #583C87;
+    color: #B04F00;
     top: 55%;
     left: 74%;
     animation-duration: 13s;
@@ -274,7 +293,7 @@ hr {
     box-shadow: 40vmin 0 5.418100670089328vmin currentColor;
 }
 .background span:nth-child(18) {
-    color: #E45A84;
+    color: #F8B00C;
     top: 84%;
     left: 56%;
     animation-duration: 54s;
@@ -283,7 +302,7 @@ hr {
     box-shadow: -40vmin 0 5.091533502673072vmin currentColor;
 }
 .background span:nth-child(19) {
-    color: #E45A84;
+    color: #F8B00C;
     top: 29%;
     left: 92%;
     animation-duration: 8s;
@@ -291,7 +310,13 @@ hr {
     transform-origin: -13vw -14vh;
     box-shadow: 40vmin 0 5.858574587548145vmin currentColor;
 }
-*/
+
+
+
+
+
+
+
 /*===================================
                 STEPS
 =====================================*/
@@ -302,7 +327,7 @@ hr {
     color: #232323;
 }
 .step {
-    padding: 2em 0em;
+    padding: 2em 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,7 +354,7 @@ hr {
     text-align: center;
 }
 .step-container_arrow {
-    width: 145px;
+    width: 139px;
 }
 .step_btn {
     border: 2px solid #ef6c00;
@@ -339,13 +364,24 @@ hr {
     font-weight: bold;
     color: #ef6c00;
     background-color: #f2f2f7;
+    transition: 0.5s;
+    cursor: pointer;
 }
+.step_btn:hover {
+    background-color: #ef6c00;
+    color: #ffffff;
+}
+
+
+
+
+
 
 /*===================================
                 CATALOG
 =====================================*/
 .catalog {
-    padding-top: 2em;
+    padding: 2em 100px;
     margin-bottom: 2em;
 }
 #catalog-section-title {
@@ -410,8 +446,14 @@ hr {
     font-weight: bold;
     color: #ffffff;
     background-color: #ef6c00;
-    box-shadow: 5px 5px 5px #535353;
     margin-top: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.catalog_btn:hover {
+    box-shadow: 0px 0px 10px #ef6c00;
+    background-color: #ffffff;
+    color: #ef6c00;
 }
 .catalog-item_image {
     width: 360px;
@@ -459,6 +501,14 @@ hr {
 .next:hover {
     box-shadow: -5px 5px 5px;
 }
+.slider_wrapper_mobile {
+    display: none;
+}
+
+
+
+
+
 /*===================================
              QUALITY
 =====================================*/
@@ -483,6 +533,11 @@ hr {
     font-size: 16px;
     font-weight: 400;
 }
+
+
+
+
+
 /*================================
         PROMOTION
 ================================*/
@@ -492,7 +547,7 @@ hr {
     margin: 3em auto;
     border-radius: 16px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	animation: gradient 15s ease infinite;
+	animation: gradient 8s ease infinite;
     background-size: 400% 400%;
     display: flex;
     justify-content: space-around;
@@ -537,13 +592,23 @@ hr {
     font-weight: bold;
     color: #ffffff;
     background-color: #ef6c00;
-    box-shadow: 5px 5px 5px #535353;
+    box-shadow: 0px 0px 10px #fff;
     cursor: pointer;
+    transition: 0.5s;
     margin-top: 3em;
+}
+.promotion-btn:hover {
+    background-color: #ffffff;
+    color: #ef6c00;
 }
 .promotion-image {
     width: 280px;
 }
+
+
+
+
+
 /*==============================
         FEEDBACK FORM
 ================================*/
@@ -600,67 +665,11 @@ hr {
     font-weight: 700;
     border: none;
     border-radius: 10px;
-}
-
-/*==============================
-            FOOTER
-===============================*/
-.footer {
-    padding-top: 3em;
-}
-.footer-block-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #232323;
-    margin-bottom: 2em;
-}
-.footer-logo-title {
-    font-size: 32px;
-    font-weight: 700;
-}
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-}
-.footer-nav_list {
-    list-style-type: none;
-}
-.footer-nav-link {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    color: #232323;
-    padding: 0.5em;
+    transition: 0.5s;
     cursor: pointer;
 }
-.footer-contact-title {
-    color: #232323;
-    font-size: 16px;
-    font-weight: 700;
-}
-.footer-contact-list {
-    list-style-type: none;
-}
-.footer-contact-item {
-    color: #232323;
-    font-size: 16px;
-    font-weight: 400;
-}
-.footer-block-2 {
-    display: flex;
-    justify-content: space-between;
-}
-.footer-block-2-text {
-    font-size: 12px;
-    font-weight: 300;
-    color: #232323;
-}
-.footer-icons {
-    display: flex;
-    justify-content: center;
-}
-.footer-pay-image {
-    width: 510px;
+.feedback-form-btn:hover {
+    box-shadow: 0px 0px 10px #ef6c00;
+    background-color: #ffffff;
+    color: #ef6c00;
 }

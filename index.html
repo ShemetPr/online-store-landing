@@ -9,46 +9,57 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/adaptive_mobile.css">
     <title>City Shop</title>
 </head>
 <body>
     <div class="preview">
-        <header class="header">
-            <div class="header_logo">City shop</div>
-                <nav class="header_nav-desktop">
-                    <ul class="header_nav-list">
-                        <li class="header_nav-item">
-                            <a class="header_nav-link _promotion">Акция</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a class="header_nav-link">Каталог</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a class="header_nav-link">Доставка</a>
-                        </li>
-                        <li class="header_nav-item">
-                            <a class="header_nav-link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            <div class="header_btn-wrapper">
-                <div class="header_search-btn">
-                    <img class="search-btn" src="images/header-search-icon.png" alt="search">
-                </div>
-                <button class="header_call-btn">
-                Заказать звонок
-                </button>
+
+    <!--===========HEADER MOBILE==========-->
+        <header class="header-mobile">
+            <div class="header_logo-mobile">City shop</div>
+            <div class="burger-open-button">
+                <svg id="burger_btn" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.25 16"><defs><style>.cls-1{fill:#ef6c00;}</style></defs><path class="cls-1" d="M29.24,14.67H5.76a1.32,1.32,0,0,0-1.38,1.26v.14a1.32,1.32,0,0,0,1.38,1.26H29.24a1.32,1.32,0,0,0,1.38-1.26v-.14A1.32,1.32,0,0,0,29.24,14.67Z" transform="translate(-4.38 -8)"/><path class="cls-1" d="M29.24,21.33H5.76A1.33,1.33,0,0,0,4.38,22.6v.13A1.33,1.33,0,0,0,5.76,24H29.24a1.33,1.33,0,0,0,1.38-1.27V22.6A1.33,1.33,0,0,0,29.24,21.33Z" transform="translate(-4.38 -8)"/><path class="cls-1" d="M29.24,8H5.76A1.33,1.33,0,0,0,4.38,9.27V9.4a1.33,1.33,0,0,0,1.38,1.27H29.24A1.33,1.33,0,0,0,30.62,9.4V9.27A1.33,1.33,0,0,0,29.24,8Z" transform="translate(-4.38 -8)"/></svg>
             </div>
         </header>
-        <div class="background">
-            <div class="preview-container">
+    <!--==================================-->
+    <header class="header">
+        <div class="header_logo">City shop</div>
+            <nav class="header_nav-desktop">
+                <ul class="header_nav-list">
+                    <li class="header_nav-item">
+                        <a class="header_nav-link _promotion">Акция</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a class="header_nav-link">Каталог</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a class="header_nav-link">Доставка</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a class="header_nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        <div class="header_btn-wrapper">
+            <div class="header_search-btn">
+                <img class="search-btn" src="images/header-search-icon.png" alt="search">
+            </div>
+            <button class="header_call-btn">
+            Заказать звонок
+            </button>
+        </div>
+    </header>
+        <div class="preview-container">
             <div class="preview_title">
                 <h1 id="preview">Широкий выбор техники и товаров для дома!</h1>
                 <p class="preview_title-text">Скидки до <span class="preview_title-text__red">70%</span></p>
-                <button class="preview_btn">Заказать со скидкой &rarr;</button>
+                <img class="preview_backgroung-image_mobile" src="images/background-image.png" alt="image">
+                <button class="preview_btn">Перейти в каталог &rarr;</button>
             </div>
-            <img class="preview_backgroung-image" src="images/background-image.jpg" alt="image">
+            <img class="preview_backgroung-image" src="images/background-image.png" alt="image">
         </div>
+        <div class="background">
             <span></span>
             <span></span>
             <span></span>
@@ -70,8 +81,7 @@
             <span></span>
             <span></span>
          </div>
-        
-    </div>
+        </div>
     <hr>
     <section class="step">
         <h2 id="step">Как мы работаем</h2>
@@ -118,21 +128,51 @@
                         <div class="price_actual">990 р.</div>
                         <div class="price_irrelevant">1109 р.</div>
                     </div>
-                    <button class="catalog_btn">Заказать со скидкой</button>
+                    <button class="catalog_btn">Заказать со скидкой &rarr;</button>
                 </div>
                 <img class="catalog-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner"></img>
                 <a class="next" onclick="plusSlide()">&#10095;</a>
             </div>
         </div>
-        
-        
         <div class="slider-dotts">
             <span class="slider-dotts-item _tagged"></span>
             <span class="slider-dotts-item"></span>
             <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item"></span>
         </div>
+        <!--==========MOBILE SLIDER=============-->
+        <div class="slider_wrapper-mobile">
+            <div class="slide_1">
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <div class="slide-description">
+                    <img class="catalog-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner"></img>
+                    <h2 id="slide_title">Робот-пылесос Xiaomi Mi Robot Vacuum</h2>
+                    <ul class="slide-description-text_wrapper">
+                        <li class="slide-description_text">Влажная уборка</li>
+                        <li class="slide-description_text">Mi Home/Яндекс Алиса/Amazon Echo</li>
+                        <li class="slide-description_text">Пылесборник 0.55 л</li>
+                        <li class="slide-description_text">Датчики перепада высоты</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price_actual">990 р.</div>
+                        <div class="price_irrelevant">1109 р.</div>
+                    </div>
+                    <button class="catalog_btn">Заказать со скидкой &rarr;</button>
+                </div>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+        </div>
+        <div class="slider-dotts_mobile">
+            <span class="slider-dotts-item _tagged"></span>
+            <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item"></span>
+        </div>
+        <!--====================================-->
     </section>
-    <script src="js/slider.js"></script>
+    
     <hr>
     <div class="quality">
         <div class="quality_item">
@@ -153,7 +193,7 @@
         <div class="promotion-description">
             <h2 class="promotion-title">АКЦИЯ! Скидки до 70%!</h2>
             <span class="promotion-text">Приобретайте технику и товары для дома по выгодным ценам!</span>
-            <button class="promotion-btn">Заказать со скидкой</button>
+            <button class="promotion-btn">Заказать со скидкой &rarr;</button>
         </div>
         <img class="promotion-image" src="images/big_watch.png" alt="watch">
     </div>
