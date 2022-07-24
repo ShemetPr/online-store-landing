@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>City Shop</title>
+</head>
+<body>
+    <div class="preview">
+        <header class="header">
+            <div class="header_logo">City shop</div>
+                <nav class="header_nav-desktop">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-item">
+                            <a class="header_nav-link _promotion">Акция</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a class="header_nav-link">Каталог</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a class="header_nav-link">Доставка</a>
+                        </li>
+                        <li class="header_nav-item">
+                            <a class="header_nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            <div class="header_btn-wrapper">
+                <div class="header_search-btn">
+                    <img class="search-btn" src="images/header-search-icon.png" alt="search">
+                </div>
+                <button class="header_call-btn">
+                Заказать звонок
+                </button>
+            </div>
+        </header>
+        <div class="background">
+            <div class="preview-container">
+            <div class="preview_title">
+                <h1 id="preview">Широкий выбор техники и товаров для дома!</h1>
+                <p class="preview_title-text">Скидки до <span class="preview_title-text__red">70%</span></p>
+                <button class="preview_btn">Заказать со скидкой &rarr;</button>
+            </div>
+            <img class="preview_backgroung-image" src="images/background-image.jpg" alt="image">
+        </div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+        
+    </div>
+    <hr>
+    <section class="step">
+        <h2 id="step">Как мы работаем</h2>
+        <div class="step-container">
+            <div class="step-container_item">
+                <img class="step-item_image" src="images/step-img-1.jpg" alt="step-image">
+                <span class="step-container-item_text">Выберете товар и нажмите кнопку Оформить заказ</span>
+            </div>
+            <img class="step-container_arrow" src="images/arrow.jpg" alt="arrow">
+            <div class="step-container_item">
+                <img class="step-item_image" src="images/step-img-2.jpg" alt="step-image">
+                <span class="step-container-item_text">Наш менеджер свяжется с вами для уточнения деталей</span>
+            </div>
+            <img class="step-container_arrow" src="images/arrow.jpg" alt="arrow">
+            <div class="step-container_item">
+                <img class="step-item_image" src="images/step-img-3.jpg" alt="step-image">
+                <span class="step-container-item_text">Ожидайте доставку Вашего заказа</span>
+            </div>
+            <img class="step-container_arrow" src="images/arrow.jpg" alt="arrow">
+            <div class="step-container_item">
+                <img class="step-item_image" src="images/step-img-4.jpg" alt="step-image">
+                <span class="step-container-item_text">Получите товар и пользуйтесь с удовольсвием</span>
+            </div>
+        </div>
+        <button class="step_btn">
+            Перейти в каталог
+            </button>
+    </section>
+    <hr>
+    <section class="catalog">
+        <h2 id="catalog-section-title">Каталог</h2>
+        <div class="slider_wrapper">
+            <div class="slide_1">
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <div class="slide-description">
+                    <h2 id="slide_title">Робот-пылесос Xiaomi Mi Robot Vacuum</h2>
+                    <ul class="slide-description-text_wrapper">
+                        <li class="slide-description_text">Влажная уборка</li>
+                        <li class="slide-description_text">Mi Home/Яндекс Алиса/Amazon Echo</li>
+                        <li class="slide-description_text">Пылесборник 0.55 л</li>
+                        <li class="slide-description_text">Датчики перепада высоты</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price_actual">990 р.</div>
+                        <div class="price_irrelevant">1109 р.</div>
+                    </div>
+                    <button class="catalog_btn">Заказать со скидкой</button>
+                </div>
+                <img class="catalog-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner"></img>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+        </div>
+        
+        
+        <div class="slider-dotts">
+            <span class="slider-dotts-item _tagged"></span>
+            <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item"></span>
+        </div>
+    </section>
+    <script src="js/slider.js"></script>
+    <hr>
+    <div class="quality">
+        <div class="quality_item">
+            <img class="quality-item_image" src="images/quality-item-1.jpg" alt="quality">
+            <span class="quality-item_text">Качественный товар</span>
+        </div>
+        <div class="quality_item">
+            <img class="quality-item_image" src="images/quality-item-2.jpg" alt="quality">
+            <span class="quality-item_text">Доступные цены</span>
+        </div>
+        <div class="quality_item">
+            <img class="quality-item_image" src="images/quality-item-3.jpg" alt="quality">
+            <span class="quality-item_text">Быстрая доставка</span>
+        </div>
+    </div>
+    <hr>
+    <div class="promotion">
+        <div class="promotion-description">
+            <h2 class="promotion-title">АКЦИЯ! Скидки до 70%!</h2>
+            <span class="promotion-text">Приобретайте технику и товары для дома по выгодным ценам!</span>
+            <button class="promotion-btn">Заказать со скидкой</button>
+        </div>
+        <img class="promotion-image" src="images/big_watch.png" alt="watch">
+    </div>
+    <hr>
+    <div class="form">
+        <h2 id="form-title">Остались вопросы? Нужна консультация?</h2>
+        <p class="form-description">
+            Заполните форму и наш менеджер свяжется с Вами в ближайшее время!
+        </p>
+        <form class="feedback-form" action="#">
+            <div class="form-block">
+                <span class="feedback-form-name">Имя</span>
+                <input type="text" name="name">
+                <span class="feedback-form-phone">Телефон</span>
+                <input type="tel" name="phone">
+                <span class="feedback-form-email">Email</span>
+                <input class="feedback-form-email" type="email" name="email">
+            </div>
+            <div class="form-block">
+                <span class="feedback-form-message">Сообщение</span>
+                <input class="feedback-form-message_input" type="text" name="message">
+                <button class="feedback-form-btn" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="footer-block-1">
+            <div class="footer-logo">
+                <span class="footer-logo-title">City shop</span>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav_list">
+                    <li><a class="footer-nav-link _promotion">Акция</a></li>
+                    <li><a class="footer-nav-link">Каталог</a></li>
+                    <li><a class="footer-nav-link">Доставка</a></li>
+                    <li><a class="footer-nav-link">Контакты</a></li>
+                </ul>
+                <ul class="footer-nav_list">
+                    <li><a class="footer-nav-link">Политика конфиденциальности</a></li>
+                    <li><a class="footer-nav-link">Публичная оферта</a></li>
+                    <li><a class="footer-nav-link">О компании</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-contact-title">Связь с нами:</span>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">Режим работы: 24/7</li>
+                    <li class="footer-contact-item">+375 25 1112233</li>
+                    <li class="footer-contact-item">randommail@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-block-2">
+            <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
+            <p class="footer-block-2-text">«СитиШоп» ООО, УНП 11122233, <br>
+                почт.адрес: 220110, Минск, а/я 146</p>
+            <p class="footer-block-2-text">Дата включений в торговый реестр: 22.02.2022<br>
+                Регистрационный номер в Торговом реестре: <br>529199.
+                Регистирирующий орган: Администрация<br>
+                Советского района г.Минск</p>
+        </div>
+        <div class="footer-icons">
+        <img class="footer-pay-image" src="images/pay_icons.png" alt="pay">
+        </div>
+    </footer>
+</body>
+</html>

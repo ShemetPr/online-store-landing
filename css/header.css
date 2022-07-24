@@ -1,0 +1,44 @@
+.header {
+    font-family: 'Exo 2', sans-serif;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #232323;
+}
+.header_nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+._promotion {
+    color: #ef6c00;
+}
+.header_nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.header_btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.search-btn {
+    width: 20px;
+}
+.header_call-btn {
+    border: 2px solid #ef6c00;
+    border-radius: 10px;
+    padding: 8px 27px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef6c00;
+    background-color: #f2f2f7;
+    cursor: pointer;
+}
+
