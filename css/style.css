@@ -382,7 +382,6 @@ hr {
 =====================================*/
 .catalog {
     padding: 2em 100px;
-    margin-bottom: 2em;
 }
 #catalog-section-title {
     font-size: 40px;
@@ -501,7 +500,10 @@ hr {
 .next:hover {
     box-shadow: -5px 5px 5px;
 }
-.slider_wrapper_mobile {
+.slider_wrapper-mobile {
+    display: none;
+}
+.slider-dotts_mobile {
     display: none;
 }
 
