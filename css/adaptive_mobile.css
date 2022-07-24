@@ -107,6 +107,7 @@
     font-size: 22px;
 }
 .slider_wrapper-mobile {
+    display: block;
     padding: 0.4em;
     height: 510px;
     max-width: 500px;
