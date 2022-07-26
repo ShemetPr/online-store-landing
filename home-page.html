@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/adaptive_mobile.css">
+    <link rel="stylesheet" href="css/popup-windows.css">
     <title>City Shop</title>
 </head>
 <body>
@@ -23,21 +24,35 @@
             </div>
         </header>
     <!--==================================-->
+    <!--=============BURGER MENU==========-->
+        <div class="burger-menu">
+            <nav class="burger-menu-nav">
+                <button class="burger-close-btn"><img src="images/burger-close-btn.svg" alt="close"></button>
+                <ul class="burger-nav-list">
+                    <li><a class="burger-nav-link" href="html-pages/promotion.html">Акция</a></li>
+                    <li><a class="burger-nav-link" href="html-pages/catalog.html">Каталог</a></li>
+                    <li><a class="burger-nav-link" href="html-pages/delivery.html">Доставка</a></li>
+                    <li><a class="burger-nav-link" href="html-pages/contacts.html">Контакты</a></li>
+                    <li><a class="burger-nav-link" href="html-pages/about-us.html">О компании</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!--==================================-->
     <header class="header">
-        <div class="header_logo">City shop</div>
+        <div class="header_logo"><a href="home-page.html" class="logo-link">City shop</a> </div>
             <nav class="header_nav-desktop">
                 <ul class="header_nav-list">
                     <li class="header_nav-item">
-                        <a class="header_nav-link _promotion">Акция</a>
+                        <a class="header_nav-link _promotion" href="html-pages/promotion.html">Акция</a>
                     </li>
                     <li class="header_nav-item">
-                        <a class="header_nav-link">Каталог</a>
+                        <a class="header_nav-link" href="html-pages/catalog.html">Каталог</a>
                     </li>
                     <li class="header_nav-item">
-                        <a class="header_nav-link">Доставка</a>
+                        <a class="header_nav-link" href="html-pages/delivery.html">Доставка</a>
                     </li>
                     <li class="header_nav-item">
-                        <a class="header_nav-link">Контакты</a>
+                        <a class="header_nav-link" href="html-pages/contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +70,9 @@
                 <h1 id="preview">Широкий выбор техники и товаров для дома!</h1>
                 <p class="preview_title-text">Скидки до <span class="preview_title-text__red">70%</span></p>
                 <img class="preview_backgroung-image_mobile" src="images/background-image.png" alt="image">
+                <form action="html-pages/catalog.html">
                 <button class="preview_btn">Перейти в каталог &rarr;</button>
+                </form>
             </div>
             <img class="preview_backgroung-image" src="images/background-image.png" alt="image">
         </div>
@@ -106,16 +123,18 @@
                 <span class="step-container-item_text">Получите товар и пользуйтесь с удовольсвием</span>
             </div>
         </div>
-        <button class="step_btn">
+
+        <form action="html-pages/catalog.html"><button class="step_btn">
             Перейти в каталог
-            </button>
+            </button></form>
     </section>
     <hr>
     <section class="catalog">
         <h2 id="catalog-section-title">Каталог</h2>
         <div class="slider_wrapper">
-            <div class="slide_1">
-                <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <div class="slide_1 mySlides fade">
+                <div class="slide-flex-wrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <div class="slide-description">
                     <h2 id="slide_title">Робот-пылесос Xiaomi Mi Robot Vacuum</h2>
                     <ul class="slide-description-text_wrapper">
@@ -125,26 +144,48 @@
                         <li class="slide-description_text">Датчики перепада высоты</li>
                     </ul>
                     <div class="price-container">
-                        <div class="price_actual">990 р.</div>
-                        <div class="price_irrelevant">1109 р.</div>
+                        <div class="price_actual">990 BYN</div>
+                        <div class="price_irrelevant">1109 BYN</div>
                     </div>
-                    <button class="catalog_btn">Заказать со скидкой &rarr;</button>
+                    <button class="catalog_btn"">Заказать со скидкой &rarr;</button>
                 </div>
                 <img class="catalog-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner"></img>
-                <a class="next" onclick="plusSlide()">&#10095;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div class="slide_1 mySlides fade" >
+                <div class="slide-flex-wrapper">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <div class="slide-description">
+                    <h2 id="slide_title">Робот-пылесос Xiaomi Mi Robot Vacuum</h2>
+                    <ul class="slide-description-text_wrapper">
+                        <li class="slide-description_text">Влажная уборка</li>
+                        <li class="slide-description_text">Mi Home/Яндекс Алиса/Amazon Echo</li>
+                        <li class="slide-description_text">Пылесборник 0.55 л</li>
+                        <li class="slide-description_text">Датчики перепада высоты</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price_actual">990 BYN</div>
+                        <div class="price_irrelevant">1109 BYN</div>
+                    </div>
+                    <button class="catalog_btn"">Заказать со скидкой &rarr;</button>
+                </div>
+                <img class="catalog-item_image" src="images/catalog-images/prod-watch_3.jpg" alt="vacuum-cleaner"></img>
+                <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
             </div>
         </div>
         <div class="slider-dotts">
-            <span class="slider-dotts-item _tagged"></span>
-            <span class="slider-dotts-item"></span>
-            <span class="slider-dotts-item"></span>
-            <span class="slider-dotts-item"></span>
-            <span class="slider-dotts-item"></span>
+            <span class="slider-dotts-item _tagged demo"></span>
+            <span class="slider-dotts-item demo"></span>
+            <span class="slider-dotts-item demo"></span>
+            <span class="slider-dotts-item demo"></span>
+            <span class="slider-dotts-item demo"></span>
         </div>
         <!--==========MOBILE SLIDER=============-->
         <div class="slider_wrapper-mobile">
-            <div class="slide_1">
-                <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <div class="slide_1 mySlides fade">
+                <a class="prev" onclick="plusSlides()">&#10094;</a>
                 <div class="slide-description">
                     <img class="catalog-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner"></img>
                     <h2 id="slide_title">Робот-пылесос Xiaomi Mi Robot Vacuum</h2>
@@ -155,8 +196,27 @@
                         <li class="slide-description_text">Датчики перепада высоты</li>
                     </ul>
                     <div class="price-container">
-                        <div class="price_actual">990 р.</div>
-                        <div class="price_irrelevant">1109 р.</div>
+                        <div class="price_actual">990 BYN</div>
+                        <div class="price_irrelevant">1109 BYN</div>
+                    </div>
+                    <button class="catalog_btn">Заказать со скидкой &rarr;</button>
+                </div>
+                <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+            <div class="slide_1 mySlides fade">
+                <a class="prev" onclick="minusSlide()">&#10094;</a>
+                <div class="slide-description">
+                    <img class="catalog-item_image" src="images/catalog-images/prod-watch_3.jpg" alt="vacuum-cleaner"></img>
+                    <h2 id="slide_title">Робот-пылесос Xiaomi Mi Robot Vacuum</h2>
+                    <ul class="slide-description-text_wrapper">
+                        <li class="slide-description_text">Влажная уборка</li>
+                        <li class="slide-description_text">Mi Home/Яндекс Алиса/Amazon Echo</li>
+                        <li class="slide-description_text">Пылесборник 0.55 л</li>
+                        <li class="slide-description_text">Датчики перепада высоты</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price_actual">990 BYN</div>
+                        <div class="price_irrelevant">1109 BYN</div>
                     </div>
                     <button class="catalog_btn">Заказать со скидкой &rarr;</button>
                 </div>
@@ -172,7 +232,8 @@
         </div>
         <!--====================================-->
     </section>
-    
+    <!--<script async src="js/image-slider-catalog.js"></script>-->
+    <script async src="js/catalog-slider.js"></script>
     <hr>
     <div class="quality">
         <div class="quality_item">
@@ -220,6 +281,7 @@
         </form>
     </div>
     <hr>
+    <div class="footer-wrapper">
     <footer class="footer">
         <div class="footer-block-1">
             <div class="footer-logo">
@@ -227,15 +289,15 @@
             </div>
             <div class="footer-nav">
                 <ul class="footer-nav_list">
-                    <li><a class="footer-nav-link _promotion">Акция</a></li>
-                    <li><a class="footer-nav-link">Каталог</a></li>
-                    <li><a class="footer-nav-link">Доставка</a></li>
-                    <li><a class="footer-nav-link">Контакты</a></li>
+                    <li><a class="footer-nav-link _promotion" href="html-pages/promotion.html">Акция</a></li>
+                    <li><a class="footer-nav-link" href="html-pages/catalog.html">Каталог</a></li>
+                    <li><a class="footer-nav-link" href="html-pages/delivery.html">Доставка</a></li>
+                    <li><a class="footer-nav-link" href="html-pages/contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="footer-nav_list">
-                    <li><a class="footer-nav-link">Политика конфиденциальности</a></li>
-                    <li><a class="footer-nav-link">Публичная оферта</a></li>
-                    <li><a class="footer-nav-link">О компании</a></li>
+                    <li><a class="footer-nav-link" href="html-pages/policy.html">Политика конфиденциальности</a></li>
+                    <li><a class="footer-nav-link" href="html-pages/public-offer.html">Публичная оферта</a></li>
+                    <li><a class="footer-nav-link" href="html-pages/about-us.html">О компании</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -260,5 +322,49 @@
         <img class="footer-pay-image" src="images/pay_icons.png" alt="pay">
         </div>
     </footer>
+    </div>
+    <!--================================
+                POPUP WINDOW 1
+    ==================================-->
+    <div class="popup-window">
+        <div class="popup-window_wrapper">
+            <img class="popup-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner"></img>
+            <p class="popup-window_title">
+                Заполните и отправьте форму и наш менеджер свяжется с Вами для уточнения деталей заказа! 
+            </p>
+            <form class="popup-form">
+                <span class="popup-window_dropdown">Выберете название товара:</span> 
+            <select class="dropdown-list">
+                <option>Товар 1</option>
+                <option>Товар 2</option>
+                <option>Товар 3</option>
+                <option>Товар 4</option>
+                <option>Товар 5</option>
+            </select>
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <div class="checkbox"><input type="checkbox" required> Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
+                <button class="popup-submit-btn">Оформить заказ</button>
+                <button class="popup-close-btn">Закрыть</button>
+        </form>
+        </div>
+    </div>
+     <!--================================
+            POPUP WINDOW2
+    ==================================-->
+    <div class="popup-window-2">
+        <div class="popup-window-2_wrapper">
+            <form class="popup-form-2" method="#" action="#">
+                <p class="popup-window-2_title">
+                    Заполните и отправьте форму и наш менеджер свяжется с Вами в ближайшее время! 
+                </p>
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <div class="checkbox"><input type="checkbox" required> Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
+                <button class="popup-2-submit-btn">Отправить</button>
+                <button class="popup-2-close-btn">Закрыть</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

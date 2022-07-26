@@ -1,5 +1,5 @@
 .footer {
-    padding: 3em 100px;
+    padding-top: 3em;
 }
 .footer-block-1 {
     display: flex;
@@ -27,6 +27,10 @@
     color: #232323;
     padding: 0.5em;
     cursor: pointer;
+    transition: 0.3s;
+}
+.footer-nav-link:hover {
+    color: #ef6c00;
 }
 .footer-contact-title {
     color: #232323;

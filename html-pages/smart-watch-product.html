@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/single-product.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/adaptive_mobile.css">
+    <link rel="stylesheet" href="../css/popup-windows.css">
+    <title>City Shop</title>
+</head>
+<body>
+    <!--===========HEADER MOBILE==========-->
+    <header class="header-mobile">
+        <div class="header_logo-mobile">City shop</div>
+        <div class="burger-open-button">
+            <svg id="burger_btn" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.25 16"><defs><style>.cls-1{fill:#ef6c00;}</style></defs><path class="cls-1" d="M29.24,14.67H5.76a1.32,1.32,0,0,0-1.38,1.26v.14a1.32,1.32,0,0,0,1.38,1.26H29.24a1.32,1.32,0,0,0,1.38-1.26v-.14A1.32,1.32,0,0,0,29.24,14.67Z" transform="translate(-4.38 -8)"/><path class="cls-1" d="M29.24,21.33H5.76A1.33,1.33,0,0,0,4.38,22.6v.13A1.33,1.33,0,0,0,5.76,24H29.24a1.33,1.33,0,0,0,1.38-1.27V22.6A1.33,1.33,0,0,0,29.24,21.33Z" transform="translate(-4.38 -8)"/><path class="cls-1" d="M29.24,8H5.76A1.33,1.33,0,0,0,4.38,9.27V9.4a1.33,1.33,0,0,0,1.38,1.27H29.24A1.33,1.33,0,0,0,30.62,9.4V9.27A1.33,1.33,0,0,0,29.24,8Z" transform="translate(-4.38 -8)"/></svg>
+        </div>
+    </header>
+<!--==================================-->
+    <header class="header">
+        <div class="header_logo"><a href="home-page.html" class="logo-link">City shop</a></div>
+            <nav class="header_nav-desktop">
+                <ul class="header_nav-list">
+                    <li class="header_nav-item">
+                        <a class="header_nav-link _promotion" href="promotion.html">Акция</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a class="header_nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a class="header_nav-link" href="delivery.html">Доставка</a>
+                    </li>
+                    <li class="header_nav-item">
+                        <a class="header_nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        <div class="header_btn-wrapper">
+            <div class="header_search-btn">
+                <img class="search-btn" src="../images/header-search-icon.png" alt="search">
+            </div>
+            <button class="header_call-btn">
+                Заказать звонок
+            </button>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <a class="breadcrumbs-link" href="../home-page.html">Главная</a>
+        ><a class="breadcrumbs-link" href="catalog.html">Каталог</a>>
+        <span class="breadcrumbs-span">Smart Часы АА112</span>
+    </div>
+        <div class="product-container">
+            <div class="container">
+
+                <!-- Полноразмерные изображения с числовым текстом -->
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                    <img class="slide-image" src="../images/catalog-images/prod-watch_1.png" style="width: 250px;" alt="watch">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img class="slide-image" src="../images/catalog-images/prod-watch_2.jpg" style="width: 250px;" alt="watch">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img class="slide-image" src="../images/catalog-images/prod-watch_3.jpg" style="width: 250px;" alt="watch">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img class="slide-image" src="../images/catalog-images/prod-watch_4.jpg" style="width: 250px;" alt="watch">
+                </div>
+                <!-- Вперед и назад кнопки -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+               <hr class="slider-line">
+              
+                <!-- Миниатюры -->
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/prod-watch_1.png" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/prod-watch_2.jpg"  style="width:100%" onclick="currentSlide(2)" alt="Пять земель">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/prod-watch_3.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Горы и фьорды">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/prod-watch_4.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Северное сияние">
+                  </div>
+                </div>
+              </div>
+              <div class="product-description">
+                <span class="product-title">Смарт Часы AA123</span>
+                <li class="availability-div"><span class="availability">В наличии</span></li>
+                <p class="product-description-text">
+                    Смарт часы измерят расстояние, которое Вы пробежали, длительность тренировки,а также сожженные калории. Ночью они измерят продолжительность и качество сна. Smart Watch оповестятВас о входящем звонке, текстовом сообщении или уведомлении из приложения.
+                </p>
+                <ul class="product-description-list">
+                    <li>Размер: 38,6 х 33,3 х 10,5 мм</li>
+                    <li>Стекло: сапфир</li>
+                    <li>Ремешок: высококачественный каучук</li>
+                    <li>Bluetooth: версия 5.0</li>
+                    <li>Совместимость: Android / iOS</li>
+                    <li>Аккумулятор: до 48 часов</li>
+                    <li>Водостойкость: да</li>
+                </ul>
+                <div class="product-price-container">
+                    <div class="product-price_actual">99 р.</div>
+                    <div class="product-price_irrelevant">149 р.</div>
+                </div>
+                <div class="product-btn">Оформить заказ</div>
+              </div>
+        </div>
+    <hr>
+    <footer class="footer">
+        <div class="footer-block-1">
+            <div class="footer-logo">
+                <span class="footer-logo-title">City shop</span>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav_list">
+                    <li><a class="footer-nav-link _promotion" href="promotion.html">Акция</a></li>
+                    <li><a class="footer-nav-link" href="catalog.html">Каталог</a></li>
+                    <li><a class="footer-nav-link" href="delivery.html">Доставка</a></li>
+                    <li><a class="footer-nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="footer-nav_list">
+                    <li><a class="footer-nav-link" href="policy.html">Политика конфиденциальности</a></li>
+                    <li><a class="footer-nav-link" href="public-offer.html">Публичная оферта</a></li>
+                    <li><a class="footer-nav-link" href="about-us.html">О компании</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-contact-title">Связь с нами:</span>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">Режим работы: 24/7</li>
+                    <li class="footer-contact-item">+375 25 1112233</li>
+                    <li class="footer-contact-item">randommail@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-block-2">
+            <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
+            <p class="footer-block-2-text">«СитиШоп» ООО, УНП 11122233, <br>
+                почт.адрес: 220110, Минск, а/я 146</p>
+            <p class="footer-block-2-text">Дата включений в торговый реестр: 22.02.2022<br>
+                Регистрационный номер в Торговом реестре: <br>529199.
+                Регистирирующий орган: Администрация<br>
+                Советского района г.Минск</p>
+        </div>
+        <div class="footer-icons">
+        <img class="footer-pay-image" src="../images/pay_icons.png" alt="pay">
+        </div>
+    </footer>
+    <script src="../js/image-slider-catalog.js"></script>
+</body>
+</html>

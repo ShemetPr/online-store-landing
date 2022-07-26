@@ -1,0 +1,51 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    background-color: #f2f2f7;
+    font-family: 'Exo 2', sans-serif;
+}
+hr {
+    width: 890px;
+    background-color: #ef6c00;
+    height: 1px;
+    margin: 0 auto !important;
+}
+.about-us-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #232323;
+}
+
+/*====================================
+            BREADCRUMBS
+=====================================*/
+.breadcrumbs {
+    color: #232323;
+    font-size: 16px;
+    padding: 2em 0em;
+}
+.breadcrumbs-link {
+    color: #232323;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding-right: 0.5em;
+}
+.breadcrumbs-link:hover {
+    color: #ef6c00;
+}
+.breadcrumbs-span {
+    font-size: 16px;
+    color: #a0a0a0;
+    padding-left: 0.5em;
+}
+
+
+
+
+.text {
+    font-size: 62px;
+    height: 500px;
+}

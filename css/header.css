@@ -10,12 +10,17 @@
     font-weight: bold;
     color: #232323;
 }
+.logo-link {
+    text-decoration: none;
+    color: #232323;
+}
 .header_nav-link {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
+    color: #232323;
 }
 .header_nav-link:hover {
     color: #ef6c00;
@@ -55,6 +60,17 @@
 .header-mobile {
     display: none;
 }
+
+/*===================================
+        BURGER MENU
+=====================================*/
+.burger-menu {
+    display: none;
+}
+
+
+
+
 /*===================================
     MEDIA QUERIES FOR SMARTPHONES
 =====================================*/
@@ -79,5 +95,40 @@
     }
     #burger_btn {
         width: 30px;
+    }
+    .burger-menu {
+        display: none;
+        width: 220px;
+        height: 270px;
+        border-radius: 16px;
+        background-color: #ef6c00;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+    }
+    .burger-menu-nav {
+        padding: 1em;
+    }
+    .burger-close-btn>img {
+        width: 30px;
+    }
+    .burger-close-btn {
+        background: none;
+        border: none;
+    }
+    .burger-nav-list {
+        list-style-type: none;
+        text-align: right;
+    }
+    .burger-nav-list>li {
+        padding-top: 1em;
+    }
+    .burger-nav-link {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
     }
 }
