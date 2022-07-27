@@ -61,7 +61,9 @@
         align-items: center;
         padding-top: 2em;
     }
-
+    .preview-line {
+        display: none;
+    }
 
 /*==================================
         BACKGROUND PREVIEW
