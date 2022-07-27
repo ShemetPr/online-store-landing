@@ -60,13 +60,14 @@
 .header-mobile {
     display: none;
 }
-
 /*===================================
         BURGER MENU
 =====================================*/
 
 
-
+.burger-menu {
+    display: none;
+}
 
 
 @keyframes animateappear {
@@ -121,8 +122,6 @@
         border-radius: 16px;
         background-color: #ef6c00;
         position: absolute;
-        top: 0;
-        right: 0;
         z-index: 99999;
         position: absolute;
         top: 0;
