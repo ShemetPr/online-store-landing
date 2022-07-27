@@ -134,3 +134,16 @@ hr {
     background-color: #ffffff;
     color: #ef6c00;
 }
+
+
+@media (min-width: 320px) and (max-width: 500px) {
+    body {
+        padding: 0 1em;
+    }
+    .product-container {
+        align-items: flex-start;
+    }
+    .price-container {
+        padding-left: 1em !important;
+    }
+}

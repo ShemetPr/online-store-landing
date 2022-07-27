@@ -2,6 +2,7 @@
 let slideIndex = 0;
 showSlides();
 
+
 function plusSlides(n) {
     showSlides(slideIndex += n);
   }
@@ -22,3 +23,5 @@ function showSlides() {
   dots[slideIndex-1].className += " active-dot";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+

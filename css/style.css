@@ -12,6 +12,12 @@
 
 ===================================*/
 
+@media (min-width: 320px) and (max-width: 500px) {
+    body {
+        max-width: 500px;
+        padding: 0em !important;
+    }
+}
 body {
     max-width: 1440px;
     margin: 0 auto;
@@ -29,7 +35,9 @@ hr {
 .footer-wrapper {
     padding: 0em 100px;
 }
-
+._opened {
+    top: 1000px;
+}
 
 
 /*===================================

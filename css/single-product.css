@@ -199,3 +199,49 @@ hr {
     background-color: #ffffff;
     color: #ef6c00;
 }
+
+
+
+
+    /*===================================
+       SINGLE PRODUCT PAGE MEDIA QUARIES  
+=====================================*/
+@media (min-width: 320px) and (max-width: 500px) {
+.product-container {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+}
+.container {
+  width: 330px;
+  height: 400px;
+}
+.product-description {
+  width: 330px;
+  padding: 1em;
+}
+.product-title {
+  font-size: 24px;
+}
+.product-price-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 1;
+} 
+.product-price_actual {
+  font-size: 28px;
+  color: #ef6c00;
+}
+.product-price_irrelevant {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+}
+.product-btn {
+  margin-top: 2em;
+  margin-left: 4em;
+}
+}
