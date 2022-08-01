@@ -13,6 +13,13 @@
 .logo-link {
     text-decoration: none;
     color: #232323;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+.logo-image {
+    width: 40px;
+    border-radius: 10px;
 }
 .header_nav-link {
     text-decoration: none;
@@ -89,6 +96,7 @@
         max-width: 500px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 1em;
 
     }
@@ -96,6 +104,7 @@
         font-size: 20px;
         font-weight: bold;
     }
+    
     .burger-open-button {
         background: none;
         border: none;

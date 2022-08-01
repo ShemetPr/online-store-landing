@@ -426,6 +426,7 @@ hr {
 }
 .slide-description-text_wrapper {
     padding-left: 1em;
+    padding-top: 1em;
 }
 .slide-description_text {
     font-size: 16px;
@@ -441,7 +442,7 @@ hr {
 .price_actual {
     font-size: 36px;
     font-weight: 700;
-    color: #000;
+    color: #ef6c00;
 }
 .price_irrelevant {
     font-size: 20px;
@@ -467,8 +468,10 @@ hr {
     color: #ef6c00;
 }
 .catalog-item_image {
-    width: 360px;
+    margin-top: 3em;
+    height: 300px;
     display: block;
+    border-radius: 10px;
 }
 .slider-dotts {
     display: flex;

@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" href="../images/favIcoLogo.ico" rel="icon">
-    <link rel="stylesheet" href="../css/about-us.css">
-    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/single-product.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/adaptive_mobile.css">
     <link rel="stylesheet" href="../css/popup-windows.css">
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <title>Акция &mdash; STORECITY.BY</title>
+    <title>Купить Триммер для животных &mdash; STORECITY.BY</title>
 </head>
 <body>
-<!--===========HEADER MOBILE==========-->
-<header class="header-mobile">
+ <!--===========HEADER MOBILE==========-->
+ <header class="header-mobile">
     <div class="header_logo-mobile"><a href="../home-page.html" class="logo-link">
         <img class="logo-image" src="../images/Logo.png" alt="logo-image">
         STORECITY.BY</a> 
@@ -44,7 +42,6 @@
 </div>
 <script src="../js/burger-menu.js"></script>
 <!--==================================-->
-    <div class="header-wrapper">
     <header class="header">
         <div class="header_logo"><a href="../home-page.html" class="logo-link">
             <img class="logo-image" src="../images/Logo.png" alt="logo-image">
@@ -75,51 +72,74 @@
             </button>
         </div>
     </header>
-</div>
     <div class="breadcrumbs">
-        <a class="breadcrumbs-link" href="../home-page.html">Главная</a>><span class="breadcrumbs-span">Акция</span>
+        <a class="breadcrumbs-link" href="../home-page.html">Главная</a>
+        ><a class="breadcrumbs-link" href="catalog.html">Каталог</a>>
+        <span class="breadcrumbs-span">Триммер для животных</span>
     </div>
-    <h1 class="promotion-title">Акция</h1>
-    <div class="promotion-wrapper">
-        <div class="product-container grid-block"><a href="vacuum-cleaner.html"></a>
-            <img class="product-image" src="../images/catalog-images/robot_1.jpg" alt="watch">
-            <span class="product-title">Робот-пылесос</span>
-            <li class="availability-div"><span class="availability">В наличии</span></li>
-            <div class="price-container">
-                <div class="price_actual">270 BYN</div>
-                <div class="price_irrelevant">680 BYN</div>
-            </div>
-            <form action="vacuum-cleaner.html" class="pruduct-button-wrapper">
-                <button class="product-btn">Перейти к товару</button>
-            </form>
+        <div class="product-container">
+            <div class="container">
+
+                <!-- Полноразмерные изображения с числовым текстом -->
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                    <img class="slide-image" src="../images/catalog-images/trimmer-2.png" style="width: 250px;" alt="watch">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img class="slide-image" src="../images/catalog-images/trimmer-2.png" style="width: 250px;" alt="watch">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img class="slide-image" src="../images/catalog-images/trimmer-2.png" style="width: 250px;" alt="watch">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img class="slide-image" src="../images/catalog-images/trimmer-2.png" style="width: 250px;" alt="watch">
+                </div>
+                <!-- Вперед и назад кнопки -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+               <hr class="slider-line">
+              
+                <!-- Миниатюры -->
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/trimmer-2.png" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/trimmer-2.png"  style="width:100%" onclick="currentSlide(2)" alt="Пять земель">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/trimmer-2.png"  style="width:100%" onclick="currentSlide(3)" alt="Горы и фьорды">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../images/catalog-images/trimmer-2.png"  style="width:100%" onclick="currentSlide(4)" alt="Северное сияние">
+                  </div>
+                </div>
+              </div>
+              <div class="product-description">
+                <span class="product-title">Триммер для животных</span>
+                <li class="availability-div"><span class="availability">В наличии</span></li>
+                <p class="product-description-text">
+                    Профессиональная машинка для стрижки домашних животных (собак и
+                    кошек).Предназначена для стрижки и грумминга, тримминга домашних питомцев.Сменные
+                    насадки подходят для любых видов и длины шерсти. Главным преимуществом машинки
+                    являетсяотсутствие проводов.                    
+                </p>
+                
+                <div class="product-price-container">
+                    <div class="product-price_actual">Цену уточняйте у продавца</div>
+                    <div class="product-price_irrelevant"></div>
+                </div>
+                <div class="product-btn" id="catalog-btn-open">Оформить заказ</div>
+              </div>
         </div>
-        <div class="product-container grid-block"><a href="../html-pages/smart-watch-product.html"></a>
-            <img class="product-image" src="../images/catalog-images/smart-watch-4.jpg" alt="watch">
-            <span class="product-title">Smart Watch X7 PRO</span>
-            <li class="availability-div"><span class="availability">В наличии</span></li>
-            <div class="price-container">
-                <div class="price_actual">190 BYN</div>
-                <div class="price_irrelevant">560 BYN</div>
-            </div>
-            <form action="smart-watch-product.html" class="pruduct-button-wrapper">
-                <button class="product-btn">Перейти к товару</button>
-            </form>
-        </div>
-        <div class="product-container grid-block"><a href="portable-speaker.html"></a>
-            <img class="product-image" src="../images/catalog-images/portable-music-1.jpg" alt="watch">
-            <span class="product-title">Колонка JBL Flip 5 (реплика)</span>
-            <li class="availability-div"><span class="availability">В наличии</span></li>
-            <div class="price-container">
-                <div class="price_actual">160 BYN</div>
-                <div class="price_irrelevant">489 BYN</div>
-            </div>
-            <form action="portable-speaker.html" class="pruduct-button-wrapper">
-                <button class="product-btn">Перейти к товару</button>
-            </form>
-        </div>
-    </div>
     <hr>
-    <div class="footer-wrapper">
     <footer class="footer">
         <div class="footer-block-1">
             <div class="footer-logo">
@@ -158,8 +178,36 @@
         <img class="footer-pay-image" src="../images/pay_icons.png" alt="pay">
         </div>
     </footer>
-</div>
-    <!--================================
+     <!--================================
+                POPUP WINDOW 1
+    ==================================-->
+    <div class="popup-window" id="modal-1">
+        <div class="popup-window_wrapper">
+            <img class="popup-item_image" src="../images/catalog-images/trimmer-2.png" alt="trimmer">
+            <p class="popup-window_title">
+                Заполните и отправьте форму и наш менеджер свяжется с Вами для уточнения деталей заказа! 
+            </p>
+            <form class="popup-form">
+                <span class="popup-window_dropdown">Выберете название товара:</span> 
+            <select class="dropdown-list">
+                <option>Триммер для животных</option>
+                <option>Триммер</option>
+                <option>Робот-пылесос</option>
+                <option>Наушники APods 2U</option>
+                <option>Smart Watch X7 PRO</option>
+                <option>Колонка JBL Flip 5</option>
+            </select>
+                <input type="text" name="name" placeholder="Имя">
+                <input type="tel" name="phone" placeholder="Телефон" >
+                <div class="checkbox"><input type="checkbox" > Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
+                <button class="popup-submit-btn">Оформить заказ</button>
+                <button class="popup-close-btn">Закрыть</button>
+        </form>
+        </div>
+    </div>
+    <script src="../js/popup-form.js"></script>
+    <script src="../js/image-slider-catalog.js"></script>
+     <!--================================
             POPUP WINDOW2
     ==================================-->
     <div class="popup-window-2" id="modal-2">
@@ -168,15 +216,14 @@
                 <p class="popup-window-2_title">
                     Заполните и отправьте форму и наш менеджер свяжется с Вами в ближайшее время! 
                 </p>
-                <input type="text" name="name" placeholder="Имя" >
-                <input type="tel" name="phone" placeholder="Телефон" >
-                <div class="checkbox"><input type="checkbox" > Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <div class="checkbox"><input type="checkbox" required> Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
                 <button class="popup-2-submit-btn">Отправить</button>
                 <button class="popup-2-close-btn">Закрыть</button>
             </form>
         </div>
     </div>
-    <script src="../js/popup-call.js"></script>
-    <scrip src="../js/click-block.js"></scrip>
+<script src="../js/popup-call.js" ></script>
 </body>
 </html>

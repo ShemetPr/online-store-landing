@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="../images/favIcoLogo.ico" rel="icon">
     <link rel="stylesheet" href="../css/about-us.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -11,12 +12,15 @@
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/adaptive_mobile.css">
     <link rel="stylesheet" href="../css/popup-windows.css">
-    <title>Контакты - City Shop</title>
+    <title>Контакты &mdash; STORECITY.BY</title>
 </head>
 <body>
     <!--===========HEADER MOBILE==========-->
     <header class="header-mobile">
-        <div class="header_logo-mobile">City shop</div>
+        <div class="header_logo-mobile"><a href="../home-page.html" class="logo-link">
+            <img class="logo-image" src="../images/Logo.png" alt="logo-image">
+            STORECITY.BY</a> 
+        </div>
         <div class="burger-open-button" id="burger-open-button-box">
             <svg id="burger_btn" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.25 16"><defs><style>.cls-1{fill:#ef6c00;}</style></defs><path class="cls-1" d="M29.24,14.67H5.76a1.32,1.32,0,0,0-1.38,1.26v.14a1.32,1.32,0,0,0,1.38,1.26H29.24a1.32,1.32,0,0,0,1.38-1.26v-.14A1.32,1.32,0,0,0,29.24,14.67Z" transform="translate(-4.38 -8)"/><path class="cls-1" d="M29.24,21.33H5.76A1.33,1.33,0,0,0,4.38,22.6v.13A1.33,1.33,0,0,0,5.76,24H29.24a1.33,1.33,0,0,0,1.38-1.27V22.6A1.33,1.33,0,0,0,29.24,21.33Z" transform="translate(-4.38 -8)"/><path class="cls-1" d="M29.24,8H5.76A1.33,1.33,0,0,0,4.38,9.27V9.4a1.33,1.33,0,0,0,1.38,1.27H29.24A1.33,1.33,0,0,0,30.62,9.4V9.27A1.33,1.33,0,0,0,29.24,8Z" transform="translate(-4.38 -8)"/></svg>
         </div>
@@ -39,7 +43,10 @@
 <script src="../js/burger-menu.js"></script>
 <!--==================================-->
     <header class="header">
-        <div class="header_logo"><a href="../home-page.html" class="logo-link">City shop</a> </div>
+        <div class="header_logo"><a href="../home-page.html" class="logo-link">
+            <img class="logo-image" src="../images/Logo.png" alt="logo-image">
+            STORECITY.BY</a> 
+        </div>
             <nav class="header_nav-desktop">
                 <ul class="header_nav-list">
                     <li class="header_nav-item">
@@ -60,7 +67,7 @@
             <div class="header_search-btn">
                 <img class="search-btn" src="../images/header-search-icon.png" alt="search">
             </div>
-            <button class="header_call-btn">
+            <button class="header_call-btn" id="header-call-btn">
                 Заказать звонок
             </button>
         </div>
@@ -69,14 +76,27 @@
         <a class="breadcrumbs-link" href="../home-page.html">Главная</a>><span class="breadcrumbs-span">Контакты</span>
     </div>
     <h1 class="about-us-title">Контакты</h1>
-    <div class="text">
-        Тут будет текст
+    <p class="contacts-text">
+        Напишите или позвоните нам, проконсультируем по любым вопросам! <br>
+        Нам важен каждый клиент! 
+    </p>
+    <div class="contacts-container">
+        <span class="contacts-container_item">Минск, Беларусь</span>
+        <span class="contacts-container_item">Режим работы: 24/7</span>
+        <p class="contacts-container_item">Если у вас есть вопросы или нужна консультация, то позвоните по номеру 
+            <span class="contacts-continer_item_phone">+375 33 3347206</span> 
+            или напишите 
+            <span class="contacts-continer_item_email">storecityby@gmail.com</span>
+        </p>
+        <span class="contacts-container_item">Продавец: ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.
+            Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк</span>
     </div>
     <hr>
     <footer class="footer">
         <div class="footer-block-1">
             <div class="footer-logo">
-                <span class="footer-logo-title">City shop</span>
+                <img class="footer-logo-img" src="../images/Logo.png" alt="logo">
+                <span class="footer-logo-title">STORECITY.BY</span>
             </div>
             <div class="footer-nav">
                 <ul class="footer-nav_list">
@@ -86,8 +106,8 @@
                     <li><a class="footer-nav-link" href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="footer-nav_list">
-                    <li><a class="footer-nav-link" href="policy.html">Политика конфиденциальности</a></li>
-                    <li><a class="footer-nav-link" href="public-offer.html">Публичная оферта</a></li>
+                    <li><a class="footer-nav-link" href="policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+                    <li><a class="footer-nav-link" href="public-offer-pdf.pdf" target="_blank">Публичная оферта</a></li>
                     <li><a class="footer-nav-link" href="about-us.html">О компании</a></li>
                 </ul>
             </div>
@@ -95,19 +115,16 @@
                 <span class="footer-contact-title">Связь с нами:</span>
                 <ul class="footer-contact-list">
                     <li class="footer-contact-item">Режим работы: 24/7</li>
-                    <li class="footer-contact-item">+375 25 1112233</li>
-                    <li class="footer-contact-item">randommail@gmail.com</li>
+                    <li class="footer-contact-item">+375 33 3347206</li>
+                    <li class="footer-contact-item">storecityby@gmail.com</li>
                 </ul>
             </div>
         </div>
         <div class="footer-block-2">
             <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
-            <p class="footer-block-2-text">«СитиШоп» ООО, УНП 11122233, <br>
-                почт.адрес: 220110, Минск, а/я 146</p>
-            <p class="footer-block-2-text">Дата включений в торговый реестр: 22.02.2022<br>
-                Регистрационный номер в Торговом реестре: <br>529199.
-                Регистирирующий орган: Администрация<br>
-                Советского района г.Минск</p>
+            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.<br>
+                Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк
+            </p>
         </div>
         <div class="footer-icons">
         <img class="footer-pay-image" src="../images/pay_icons.png" alt="pay">
@@ -116,7 +133,7 @@
     <!--================================
             POPUP WINDOW2
     ==================================-->
-    <div class="popup-window-2">
+    <div class="popup-window-2" id="modal-2">
         <div class="popup-window-2_wrapper">
             <form class="popup-form-2" method="#" action="#">
                 <p class="popup-window-2_title">
@@ -130,5 +147,6 @@
             </form>
         </div>
     </div>
+    <script src="../js/popup-call.js"></script>
 </body>
 </html>

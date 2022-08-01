@@ -1,6 +1,5 @@
 body {
     max-width: 1440px;
-    max-width: 1440px;
     margin: 0 auto;
     padding: 0px 100px;
     box-sizing: border-box;
@@ -21,12 +20,12 @@ hr {
             BREADCRUMBS
 =====================================*/
 .breadcrumbs {
-    color: #232323;
+    color: #a0a0a0;
     font-size: 16px;
     padding: 2em 0em;
 }
 .breadcrumbs-link {
-    color: #232323;
+    color: #ef6c00;
     font-size: 16px;
     text-decoration: none;
     transition: 0.5s;
@@ -34,7 +33,7 @@ hr {
     padding-left: 0.5em;
 }
 .breadcrumbs-link:hover {
-    color: #ef6c00;
+    color: #a0a0a0;
 }
 .breadcrumbs-span {
     font-size: 16px;
@@ -114,6 +113,9 @@ hr {
     float: left;
     width: 25%;
   }
+  .smart-watch { /*ширина картинок-миниатюр специально для страницы с часами*/
+    width: 11%;
+  }
   .demo {
     opacity: 0.6;
   }
@@ -138,8 +140,10 @@ hr {
     align-items: flex-start;
 }
 .product-description-list {
-    list-style-type: none;
     padding-top: 1em;
+}
+.product-description-list_title {
+  font-weight: 700;
 }
 .product-title {
     font-size: 36px;
@@ -158,13 +162,7 @@ hr {
     font-weight: 400;
     color: #232323;
  }
- .breadcrumbs-link {
-    text-decoration: none;
-    color: #232323;
- }
- .breadcrumbs-span {
-    color: #a0a0a0;
- }
+
  .product-price-container {
     display: flex;
     align-items: center;
@@ -172,11 +170,11 @@ hr {
     padding-top: 1em;
 }
 .product-price_actual {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 500;
     color: #ef6c00;
 }
-.price_irrelevant {
+.product-price_irrelevant {
     font-size: 18px;
     font-weight: 400;
     text-decoration: line-through;

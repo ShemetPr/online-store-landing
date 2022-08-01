@@ -16,36 +16,94 @@ hr {
     font-size: 40px;
     font-weight: 700;
     color: #232323;
+    text-align: center;
 }
-
+.text {
+    font-size: 14px;
+    
+}
 /*====================================
             BREADCRUMBS
 =====================================*/
 .breadcrumbs {
-    color: #232323;
+    color: #a0a0a0;
     font-size: 16px;
     padding: 2em 0em;
 }
 .breadcrumbs-link {
-    color: #232323;
+    color: #ef6c00;
     font-size: 16px;
     text-decoration: none;
     transition: 0.5s;
     padding-right: 0.5em;
 }
 .breadcrumbs-link:hover {
-    color: #ef6c00;
+    color: #a0a0a0;
 }
 .breadcrumbs-span {
     font-size: 16px;
     color: #a0a0a0;
     padding-left: 0.5em;
 }
-
-
-
-
-.text {
-    font-size: 62px;
-    height: 500px;
+ /*===============================
+        DELIVERY PAGE
+==================================*/
+.delivery-container_img {
+    width: 100px;
 }
+.delivery-container_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #232323;
+}
+.delivey-container_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #232323;
+    text-align: center;
+}
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+}
+.delivery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding-top: 3em;
+    margin-bottom: 3em;
+}
+
+/*===============================
+        CONTACTS PAGE
+==================================*/
+.contacts-text {
+    padding-top: 3em ;
+    color: #232323;
+    font-size: 16px;
+    text-align: center;
+}
+.contacts-container {
+    width: 450px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #9c9c9c;
+    padding: 2em;
+    margin: 2em auto;
+}
+.contacts-container_item {
+    display: block;
+    font-size: 16px;
+    color: #232323;
+    padding: 1em;
+}
+.contacts-continer_item_phone {
+    color: #ef6c00;
+}
+.contacts-continer_item_email {
+    color: #ef6c00;
+}
+
