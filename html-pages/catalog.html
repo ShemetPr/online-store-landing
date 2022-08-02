@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/adaptive_mobile.css">
     <link rel="stylesheet" href="../css/popup-windows.css">
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-3.6.0.js"></script>
     <title>Каталог &mdash; STORECITY.BY</title>
 </head>
 <body>
     <!--===========HEADER MOBILE==========-->
     <header class="header-mobile">
-        <div class="header_logo-mobile"><a href="../home-page.html" class="logo-link">
+        <div class="header_logo-mobile"><a href="../index.html" class="logo-link">
             <img class="logo-image" src="../images/Logo.png" alt="logo-image">
             STORECITY.BY</a> 
         </div>
@@ -32,7 +32,7 @@
     <nav class="burger-menu-nav">
         <button class="burger-close-btn"><img src="../images/burger-close-btn.svg" alt="close"></button>
         <ul class="burger-nav-list">
-            <li><a class="burger-nav-link" href="../home-page.html">Главная</a></li>
+            <li><a class="burger-nav-link" href="../index.html">Главная</a></li>
             <li><a class="burger-nav-link" href="promotion.html">Акция</a></li>
             <li><a class="burger-nav-link" href="catalog.html">Каталог</a></li>
             <li><a class="burger-nav-link" href="delivery.html">Доставка</a></li>
@@ -45,7 +45,7 @@
 <!--==================================-->
     <div class="header-wrapper">
     <header class="header">
-        <div class="header_logo"><a href="../home-page.html" class="logo-link">
+        <div class="header_logo"><a href="../index.html" class="logo-link">
             <img class="logo-image" src="../images/Logo.png" alt="logo-image">
             STORECITY.BY</a> 
         </div>
@@ -76,7 +76,7 @@
     </header>
     </div>
     <div class="breadcrumbs">
-        <a class="breadcrumbs-link" href="../home-page.html">Главная</a>><span class="breadcrumbs-span">Каталог</span>
+        <a class="breadcrumbs-link" href="../index.html">Главная</a>><span class="breadcrumbs-span">Каталог</span>
     </div>
     <h1 class="catalog-title">Каталог</h1>
     <div class="catalog-wrapper">
@@ -133,8 +133,8 @@
             <span class="product-title">Триммер для животных</span>
             <li class="availability-div"><span class="availability">В наличии</span></li>
             <div class="price-container">
-                <div class="price_actual">-//-</div>
-                <!--<div class="price_irrelevant">139 р.</div>-->
+                <div class="price_actual">39 BYN</div>
+                <div class="price_irrelevant">69 BYN</div>
             </div>
             <form action="trimmer-for-animals.html" class="pruduct-button-wrapper">
                 <button class="product-btn">Перейти к товару</button>
@@ -200,16 +200,16 @@
     ==================================-->
     <div class="popup-window-2" id="modal-2">
         <div class="popup-window-2_wrapper">
-            <form class="popup-form-2" method="#" action="#">
+            <form class="popup-form-2" method="POST" action="../sendmail.php">
                 <p class="popup-window-2_title">
                     Заполните и отправьте форму и наш менеджер свяжется с Вами в ближайшее время! 
                 </p>
                 <input type="text" name="name" placeholder="Имя" required>
                 <input type="tel" name="phone" placeholder="Телефон" required>
                 <div class="checkbox"><input type="checkbox" required> Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
-                <button class="popup-2-submit-btn">Отправить</button>
-                <button class="popup-2-close-btn">Закрыть</button>
+                <input class="popup-2-submit-btn" type="submit" value="Отправить">
             </form>
+            <button class="popup-2-close-btn">Закрыть</button>
         </div>
     </div>
 <script src="../js/popup-call.js"></script>

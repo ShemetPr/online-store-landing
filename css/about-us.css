@@ -106,4 +106,41 @@ hr {
 .contacts-continer_item_email {
     color: #ef6c00;
 }
+@media (min-width: 320px) and (max-width: 500px) {
+    .contacts-container {
+        width: inherit;
+    }
+}
+/*===============================
+        THANKS PAGE
+==================================*/
+.thanks-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+}
+.thanks-img {
+    width: 100px;
+}
+.thanks-text_title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ef6c00;
+    width: 750px;
+    text-align: center;
+    margin: 1em auto;
+}
+@media (min-width: 320px) and (max-width: 500px) {
+    .thanks-container {
+        max-width: 500px;
+        padding: 1em;
+        justify-content: flex-start;
+    }
+    .thanks-text_title {
+        width: inherit;
+        font-size: 26px;
+    }
+}

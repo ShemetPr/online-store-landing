@@ -117,7 +117,7 @@
     background-color: #ef6c00;
 }
 .slider_wrapper {
-    height: 450px;
+    height: 550px;
 }
 .slide-flex-wrapper {
     display: flex;
@@ -132,11 +132,14 @@
     margin: 0;
     gap: 1em;
 }
-.catalog-item_image {
-    width: 200px;
-    padding-top: 1em;
+.slide-description-text_wrapper {
+    padding: 0 2em;
 }
-#slide_title {
+.catalog-item_image {
+    height: 200px;
+
+}
+.slide_title {
     font-size: 18px;
     text-align: center;
 }
@@ -263,6 +266,9 @@
 }
 .form-description {
     font-size: 14px;
+}
+.feedback-form-btn {
+    width: 276px !important;
 }
 .form-block>input {
     width: inherit;

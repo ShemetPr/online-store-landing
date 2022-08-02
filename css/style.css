@@ -91,7 +91,7 @@ hr {
     color: #ef6c00;
 }
 .preview_backgroung-image {
-    width: 415px;
+    width: 450px;
 }
 .preview-container {
     display: flex;
@@ -419,7 +419,7 @@ hr {
 .slide-description {
     margin: auto 0;
 }
-#slide_title {
+.slide_title {
     font-size: 20px;
     font-weight: 700;
     color: #232323;
@@ -697,16 +697,15 @@ hr {
 }
 .feedback-form-btn {
     margin-top: 2.1em;
-    padding: 10px 102px;
     background-color: #ef6c00;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
-    border: none;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
-    
+    width: 276px !important;
+    height: 36px !important;
 }
 .feedback-form-btn:hover {
     box-shadow: 0px 0px 10px #ef6c00;

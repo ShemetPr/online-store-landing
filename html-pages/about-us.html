@@ -17,7 +17,7 @@
 <body>
     <!--===========HEADER MOBILE==========-->
     <header class="header-mobile">
-        <div class="header_logo-mobile"><a href="../home-page.html" class="logo-link">
+        <div class="header_logo-mobile"><a href="../index.html" class="logo-link">
             <img class="logo-image" src="../images/Logo.png" alt="logo-image">
             City shop</a> 
         </div>
@@ -31,7 +31,7 @@
     <nav class="burger-menu-nav">
         <button class="burger-close-btn"><img src="../images/burger-close-btn.svg" alt="close"></button>
         <ul class="burger-nav-list">
-            <li><a class="burger-nav-link" href="../home-page.html">Главная</a></li>
+            <li><a class="burger-nav-link" href="../index.html">Главная</a></li>
             <li><a class="burger-nav-link" href="promotion.html">Акция</a></li>
             <li><a class="burger-nav-link" href="catalog.html">Каталог</a></li>
             <li><a class="burger-nav-link" href="delivery.html">Доставка</a></li>
@@ -43,7 +43,7 @@
 <script src="../js/burger-menu.js"></script>
 <!--==================================-->
     <header class="header">
-        <div class="header_logo"><a href="../home-page.html" class="logo-link">
+        <div class="header_logo"><a href="../index.html" class="logo-link">
             <img class="logo-image" src="../images/Logo.png" alt="logo-image">
             City shop</a> 
         </div>
@@ -73,11 +73,44 @@
         </div>
     </header>
     <div class="breadcrumbs">
-        <a class="breadcrumbs-link" href="../home-page.html">Главная</a>><span class="breadcrumbs-span">О компании</span>
+        <a class="breadcrumbs-link" href="../index.html">Главная</a>><span class="breadcrumbs-span">О компании</span>
     </div>
     <h1 class="about-us-title">О компании</h1>
-    <div class="text">
-        Тут будет текст
+    <div class="delivery-wrapper">
+        <div class="delivery-container">
+            <img class="delivery-container_img" src="../images/quality-item-1.jpg" alt="quality">
+            <span class="delivery-container_title">Гарантия качества</span>
+            <p class="delivey-container_text">Перед отправкой товары проходят 100% проверку</p>
+        </div>
+        <hr>
+        <div class="delivery-container">
+            <img class="delivery-container_img" src="../images/quality-item-3.jpg" alt="quality">
+            <span class="delivery-container_title">Быстрая доставка</span>
+            <p class="delivey-container_text">Доставка Белпочтой или курьером по Минску от 1 до 3 рабочих дней</p>
+        </div>
+        <hr>
+        <div class="delivery-container">
+            <img class="delivery-container_img" src="../images/quality-item-2.jpg" alt="quality">
+            <span class="delivery-container_title">Оплата при получении</span>
+            <p class="delivey-container_text">Мы не принимаем предоплат.
+                Оплата заказа осуществляется при получении в отделении Белпочты или курьеру в Минске</p>
+        </div>
+    </div>
+    <hr>
+    <p class="contacts-text">
+        Напишите или позвоните нам, проконсультируем по любым вопросам! <br>
+        Нам важен каждый клиент! 
+    </p>
+    <div class="contacts-container">
+        <span class="contacts-container_item">Минск, Беларусь</span>
+        <span class="contacts-container_item">Режим работы: 24/7</span>
+        <p class="contacts-container_item">Если у вас есть вопросы или нужна консультация, то позвоните по номеру 
+            <span class="contacts-continer_item_phone">+375 33 3347206</span> 
+            или напишите 
+            <span class="contacts-continer_item_email">storecityby@gmail.com</span>
+        </p>
+        <span class="contacts-container_item">Продавец: ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.
+            Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк</span>
     </div>
     <hr>
     <footer class="footer">
@@ -122,16 +155,16 @@
     ==================================-->
     <div class="popup-window-2" id="modal-2">
         <div class="popup-window-2_wrapper">
-            <form class="popup-form-2" method="#" action="#">
+            <form class="popup-form-2" method="POST" action="../sendmail.php">
                 <p class="popup-window-2_title">
                     Заполните и отправьте форму и наш менеджер свяжется с Вами в ближайшее время! 
                 </p>
                 <input type="text" name="name" placeholder="Имя" required>
                 <input type="tel" name="phone" placeholder="Телефон" required>
                 <div class="checkbox"><input type="checkbox" required> Я согласен с политикой конфиденциальности и пользовательским соглашением</div>
-                <button class="popup-2-submit-btn">Отправить</button>
-                <button class="popup-2-close-btn">Закрыть</button>
+                <input class="popup-2-submit-btn" type="submit" value="Отправить">
             </form>
+            <button class="popup-2-close-btn">Закрыть</button>
         </div>
     </div>
     <script src="../js/popup-call.js"></script>

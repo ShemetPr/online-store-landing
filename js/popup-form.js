@@ -8,11 +8,11 @@ btn6.onclick = function() {
     modalWindow.style.display = "block";
 }
  span.onclick = function() {
-   modalWIndow.style.display = "none";
+   modalWindow.style.display = "none";
  }
  window.onclick = function(event) {
    if (event.target == modal) {
-     modalWIndow.style.display = "none";
+     modalWindow.style.display = "none";
    }
  }
 
