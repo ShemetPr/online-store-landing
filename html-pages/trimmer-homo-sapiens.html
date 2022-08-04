@@ -77,13 +77,28 @@
         ><a class="breadcrumbs-link" href="catalog.html">Каталог</a>>
         <span class="breadcrumbs-span">Триммер</span>
     </div>
+    <!----------------------------------------------------->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&#10006;</span>
+        <div class="modal-content">
+      
+          <div class="my-Slides">
+            <img src="../images/catalog-images/trimmer-1.png" class="light-box_image">
+          </div>
+ 
+          <!-- Вперед/назад элементы управления -->
+          <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+        </div>
+      </div>
+     <!----------------------------------------------------->
         <div class="product-container">
             <div class="container">
 
                 <!-- Полноразмерные изображения с числовым текстом -->
                 <div class="mySlides">
                   <div class="numbertext">1 / 1</div>
-                    <img class="slide-image" src="../images/catalog-images/trimmer-1.png" style="width: 250px;" alt="watch">
+                    <img class="slide-image" src="../images/catalog-images/trimmer-1.png" style="width: 250px;" alt="watch" onclick="openModal()">
                 </div>
               
               <!--  <div class="mySlides">
@@ -109,7 +124,7 @@
                 <!-- Миниатюры -->
                 <div class="row">
                   <div class="column">
-                    <img class="demo cursor" src="../images/catalog-images/trimmer-1.png" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+                    <img class="demo cursor" src="../images/catalog-images/trimmer-1.png" style="width:100%" onclick="openModal();currentSlide(1)" alt="Лес">
                   </div>
             <!--     <div class="column">
                     <img class="demo cursor" src="../images/catalog-images/trimmer-1.png"  style="width:100%" onclick="currentSlide(2)" alt="Пять земель">
@@ -140,8 +155,9 @@
                     <li>Фирменная упаковка</li>
                 </ul>
                 <div class="product-price-container">
-                    <div class="product-price_actual">39</div>
-                    <div class="product-price_irrelevant">69</div>
+                    <img class="fire-icon" src="../images/fire.png" alt="fire">
+                    <div class="product-price_actual">39 BYN</div>
+                    <div class="product-price_irrelevant">69 BYN</div>
                 </div>
                 <div class="product-btn" id="catalog-btn-open-6">Оформить заказ</div>
               </div>
@@ -177,8 +193,7 @@
         </div>
         <div class="footer-block-2">
             <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
-            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.<br>
-                Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк
+            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478
             </p>
         </div>
         <div class="footer-icons">
@@ -198,7 +213,7 @@
                 <span class="popup-window_dropdown">Выберете название товара:</span> 
                 <select class="dropdown-list" name="product">
                     <option value="1">Наушники APods 2U</option>
-                    <option value="2">Smart Watch X7 PRO</option>
+                    <option value="2">Smart Watch</option>
                     <option value="3">Робот-пылесос</option>
                     <option value="4">Колонка JBL Flip 5</option>
                     <option value="5">Триммер</option>
@@ -232,5 +247,6 @@
         </div>
     </div>
 <script src="../js/popup-call.js" ></script>
+<script src="../js/modal-image-window.js"></script>
 </body>
 </html>

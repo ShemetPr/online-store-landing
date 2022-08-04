@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/adaptive_mobile.css">
     <link rel="stylesheet" href="../css/popup-windows.css">
-    <title>Купить Smart Watch X7 PRO &mdash; STORECITY.BY</title>
+    <title>Купить Smart Watch &mdash; STORECITY.BY</title>
 </head>
 <body>
  <!--===========HEADER MOBILE==========-->
@@ -75,15 +75,57 @@
     <div class="breadcrumbs">
         <a class="breadcrumbs-link" href="../index.html">Главная</a>
         ><a class="breadcrumbs-link" href="catalog.html">Каталог</a>>
-        <span class="breadcrumbs-span">Smart Watch X7 PRO</span>
+        <span class="breadcrumbs-span">Smart Watch</span>
     </div>
+    <!----------------------------------------------------->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&#10006;</span>
+        <div class="modal-content">
+      
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-4.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-2.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-5.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-6.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-7.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-8.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-9.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-10.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-11.jpg" class="light-box_image">
+          </div>
+          <div class="my-Slides">
+            <img src="../images/catalog-images/smart-watch-12.jpg" class="light-box_image">
+          </div>
+      
+          <!-- Вперед/назад элементы управления -->
+          <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+        </div>
+      </div>
+     <!----------------------------------------------------->
         <div class="product-container">
             <div class="container">
-
+                
                 <!-- Полноразмерные изображения с числовым текстом -->
                 <div class="mySlides">
                   <div class="numbertext">1 / 10</div>
-                    <img class="slide-image" src="../images/catalog-images/smart-watch-4.jpg" style="width: 250px;" alt="watch">
+                    <img class="slide-image" src="../images/catalog-images/smart-watch-4.jpg" style="width: 250px;" alt="watch" onclick="openModal()">
                 </div>
     
                 <div class="mySlides">
@@ -132,39 +174,39 @@
                 <!-- Миниатюры -->
                 <div class="row">
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-4.jpg" style="width:100%"  onclick="openModal();currentSlide(1)" alt="Лес">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-2.jpg"  style="width:100%" onclick="currentSlide(2)" alt="Горы и фьорды">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-2.jpg"  style="width:100%" onclick="openModal();currentSlide(2)" alt="Горы и фьорды">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-5.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-5.jpg"  style="width:100%" onclick="openModal();currentSlide(3)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-6.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-6.jpg"  style="width:100%" onclick="openModal();currentSlide(4)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-7.jpg"  style="width:100%" onclick="currentSlide(5)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-7.jpg"  style="width:100%" onclick="openModal();currentSlide(5)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-8.jpg"  style="width:100%" onclick="currentSlide(6)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-8.jpg"  style="width:100%" onclick="openModal();currentSlide(6)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-9.jpg"  style="width:100%" onclick="currentSlide(7)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-9.jpg"  style="width:100%" onclick="openModal();currentSlide(7)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-10.jpg"  style="width:100%" onclick="currentSlide(8)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-10.jpg"  style="width:100%" onclick="openModal();currentSlide(8)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-11.jpg"  style="width:100%" onclick="currentSlide(9)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-11.jpg"  style="width:100%" onclick="openModal();currentSlide(9)" alt="Северное сияние">
                   </div>
                   <div class="column smart-watch">
-                    <img class="demo cursor" src="../images/catalog-images/smart-watch-12.jpg"  style="width:100%" onclick="currentSlide(10)" alt="Северное сияние">
+                    <img class="demo cursor" src="../images/catalog-images/smart-watch-12.jpg"  style="width:100%" onclick="openModal();currentSlide(10)" alt="Северное сияние">
                   </div>
                 </div>
               </div>
               <div class="product-description">
-                <span class="product-title">Smart Watch X7 PRO</span>
+                <span class="product-title">Smart Watch</span>
                 <li class="availability-div"><span class="availability">В наличии</span></li>
                 <p class="product-description-text">
                     Смарт часы подходят для Android и iOS и позволяют отвечать на звонки и
@@ -214,6 +256,7 @@
                     <li>Коробка</li>
                 </ul>
                 <div class="product-price-container">
+                    <img class="fire-icon" src="../images/fire.png" alt="fire">
                     <div class="product-price_actual">190 BYN</div>
                     <div class="product-price_irrelevant">560 BYN</div>
                 </div>
@@ -251,8 +294,7 @@
         </div>
         <div class="footer-block-2">
             <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
-            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.<br>
-                Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк
+            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478
             </p>
         </div>
         <div class="footer-icons">
@@ -272,7 +314,7 @@
                 <span class="popup-window_dropdown">Выберете название товара:</span> 
                 <select class="dropdown-list" name="product">
                     <option value="1">Наушники APods 2U</option>
-                    <option value="2">Smart Watch X7 PRO</option>
+                    <option value="2">Smart Watch</option>
                     <option value="3">Робот-пылесос</option>
                     <option value="4">Колонка JBL Flip 5</option>
                     <option value="5">Триммер</option>
@@ -306,5 +348,6 @@
         </div>
     </div>
 <script src="../js/popup-call.js" ></script>
+<script src="../js/modal-image-window.js"></script>
 </body>
 </html>

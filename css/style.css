@@ -440,15 +440,21 @@ hr {
     padding-top: 1em;
 }
 .price_actual {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ef6c00;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fd1c1c;
 }
 .price_irrelevant {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 400;
     text-decoration: line-through;
-    color: #a0a0a0;
+    color: #ef6c00;
+}
+.no_promo {
+    color: #ef6c00;
+}
+.fire-icon {
+    width: 30px;
 }
 .catalog_btn {
     border: none;
@@ -468,7 +474,7 @@ hr {
     color: #ef6c00;
 }
 .catalog-item_image {
-    margin-top: 3em;
+    margin-top: 2.5em;
     height: 300px;
     display: block;
     border-radius: 10px;

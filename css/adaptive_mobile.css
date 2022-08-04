@@ -2,11 +2,12 @@
     body {
         max-width: 500px;
         padding: 0 1em;
-
+        
     }
     hr {
         width: 220px;
     }
+    
 
     /*===================================
     
@@ -117,7 +118,7 @@
     background-color: #ef6c00;
 }
 .slider_wrapper {
-    height: 550px;
+    height: max-content;
 }
 .slide-flex-wrapper {
     display: flex;
@@ -134,10 +135,11 @@
 }
 .slide-description-text_wrapper {
     padding: 0 2em;
+   
 }
 .catalog-item_image {
     height: 200px;
-
+    margin-top: 1em;
 }
 .slide_title {
     font-size: 18px;
@@ -154,16 +156,20 @@
     padding-top: 0;
 } 
 .price_actual {
-    font-size: 18px;
+    font-size: 20px;
+    color: #fd1c1c;;
+}
+.no_promo {
     color: #ef6c00;
 }
 .price_irrelevant {
-    font-size: 14px;
+    font-size: 16px;
+    color: #ef6c00;
 }
 .catalog_btn {
     font-size: 18px;
     padding: 15px 29px;
-    margin: 0;
+    margin: 1em 0;
     box-shadow: 0px 5px 5px #b6b6b6;
 }
 .prev, .next {
@@ -232,7 +238,7 @@
     margin: 0 auto;
 }
 .promotion-btn {
-    font-size: 18px;
+    font-size: 17px;
     padding: 15px 29px;
     margin-top: 0em;
     box-shadow: 0px 5px 5px #b6b6b6;

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/adaptive_mobile.css">
     <link rel="stylesheet" href="../css/popup-windows.css">
-    <title>Купить Робот-пылесос &mdash; StoreCity</title>
+    <title>Купить Robot sweeping &mdash; StoreCity</title>
 </head>
 <body>
  <!--===========HEADER MOBILE==========-->
@@ -75,15 +75,30 @@
     <div class="breadcrumbs">
         <a class="breadcrumbs-link" href="../index.html">Главная</a>
         ><a class="breadcrumbs-link" href="catalog.html">Каталог</a>>
-        <span class="breadcrumbs-span">Робот-пылесос</span>
+        <span class="breadcrumbs-span">Robot sweeping</span>
     </div>
+    <!----------------------------------------------------->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&#10006;</span>
+        <div class="modal-content">
+      
+          <div class="my-Slides">
+            <img src="../images/catalog-images/swipper-1.png" class="light-box_image">
+          </div>
+ 
+          <!-- Вперед/назад элементы управления -->
+          <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+        </div>
+      </div>
+     <!----------------------------------------------------->
         <div class="product-container">
             <div class="container">
 
                 <!-- Полноразмерные изображения с числовым текстом -->
                 <div class="mySlides">
                   <div class="numbertext">1 / 1</div>
-                    <img class="slide-image" src="../images/catalog-images/robot_1.jpg" style="width: 250px;" alt="watch">
+                    <img class="slide-image" src="../images/catalog-images/swipper-1.png" style="width: 250px;" alt="watch" onclick="openModal()">
                 </div>
               
                 <!--<div class="mySlides">
@@ -109,7 +124,7 @@
                 <!-- Миниатюры -->
                 <div class="row">
                   <div class="column">
-                    <img class="demo cursor" src="../images/catalog-images/robot_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Лес">
+                    <img class="demo cursor" src="../images/catalog-images/swipper-1.png" style="width:100%" onclick="openModal();currentSlide(1)" alt="Лес">
                   </div>
                <!--<div class="column">
                     <img class="demo cursor" src="../images/catalog-images/prod-watch_2.jpg"  style="width:100%" onclick="currentSlide(2)" alt="Пять земель">
@@ -124,23 +139,27 @@
                 </div>
               </div>
               <div class="product-description">
-                <span class="product-title">Робот-пылесос</span>
-                <li class="availability-div"><span class="availability">В наличии</span></li>
+                <span class="product-title">Robot sweeping</span>
+                <li class="availability-div not-in-stock"><span class="availability">Наличие товара уточняйте у менеджера</span></li>
                 <p class="product-description-text">
-                   
+                    Робот-пылесос предназначен для сухой и влажной уборки. 
                 </p>
                 <ul class="product-description-list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Интеллектуальный датчик против падения </li>
+                    <li>Планирование маршрута</li>
+                    <li>Резервуар для воды с постоянным давлением</li>
+                    <li>Глубокая очистка с фиксированными точками</li>
+                    <li>Глубокая очистка краев</li>
+                    <li>Мобильное приложение</li>
+                    <li>Ультрафиолетовый светильник</li>
+                    <li>Амортизирующие внедорожные колеса</li>
+                    <li>Заменены кисти высшего класса, эффект очистки лучше</li>
+                    <li>Низкий уровень шума</li>
                 </ul>
                 <div class="product-price-container">
-                    <div class="product-price_actual">270</div>
-                    <div class="product-price_irrelevant">680</div>
+                    <img class="fire-icon" src="../images/fire.png" alt="fire">
+                    <div class="product-price_actual">279 BYN</div>
+                    <div class="product-price_irrelevant">690 BYN</div>
                 </div>
                 <div class="product-btn" id="catalog-btn-open-6">Оформить заказ</div>
               </div>
@@ -176,9 +195,7 @@
         </div>
         <div class="footer-block-2">
             <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
-            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.<br>
-                Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк
-            </p>
+            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478
         </div>
         <div class="footer-icons">
         <img class="footer-pay-image" src="../images/pay_icons.png" alt="pay">
@@ -189,7 +206,7 @@
     ==================================-->
     <div class="popup-window" id="modal-1">
         <div class="popup-window_wrapper">
-            <img class="popup-item_image" src="../images/catalog-images/robot_1.jpg" alt="vacuum-cleaner">
+            <img class="popup-item_image" src="../images/catalog-images/swipper-1.png" alt="vacuum-cleaner">
             <p class="popup-window_title">
                 Заполните и отправьте форму и наш менеджер свяжется с Вами для уточнения деталей заказа! 
             </p>
@@ -197,8 +214,8 @@
                 <span class="popup-window_dropdown">Выберете название товара:</span> 
                 <select class="dropdown-list" name="product">
                     <option value="1">Наушники APods 2U</option>
-                    <option value="2">Smart Watch X7 PRO</option>
-                    <option value="3">Робот-пылесос</option>
+                    <option value="2">Smart WatcH</option>
+                    <option value="3">Robot sweeping</option>
                     <option value="4">Колонка JBL Flip 5</option>
                     <option value="5">Триммер</option>
                     <option value="6">Триммер для животных</option>
@@ -231,5 +248,6 @@
         </div>
     </div>
 <script src="../js/popup-call.js" ></script>
+<script src="../js/modal-image-window.js"></script>
 </body>
 </html>

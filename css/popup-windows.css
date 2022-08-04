@@ -40,6 +40,7 @@
 .popup-item_image {
     width: 150px;
     display: block;
+    border-radius: 10px;
 }
 .popup-window_title {
     font-size: 16px;
@@ -91,7 +92,8 @@
     display: block;
 }
 .popup-submit-btn {
-    padding: 12px 81px;
+    height: 31px !important;
+    width: 276px !important;
     background-color: #ef6c00;
     color: #ffffff;
     font-size: 14px;
@@ -210,8 +212,9 @@
 ====================================*/
 @media (min-width: 320px) and (max-width: 500px) {
     .popup-window_wrapper {
-        max-width: 360px;
-        height: 470px;
+        width: min-content;
+        height: min-content;
+       
         margin: auto;
     }
     .popup-window_title {
@@ -220,7 +223,8 @@
         text-align: center;
     }
     .popup-close-btn {
-        margin-top:0;
+        margin-top:1em;
+        
     }
 }
 

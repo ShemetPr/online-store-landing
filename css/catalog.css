@@ -18,7 +18,7 @@ hr {
 .catalog-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 0.8em;
     padding: 2em 0em;
 }
 .catalog-title {
@@ -30,7 +30,7 @@ hr {
 .promotion-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 0.8em;
     padding: 2em 0em;
 }
 .promotion-title {
@@ -69,8 +69,8 @@ hr {
         PRODUCT CONTAINER
  =================================*/
  .product-container {
-    width: 300px;
-    height: 410px;
+    width: min-content;
+    height: min-content;
     border-radius: 16px;
     background-color: #fff;
     cursor: pointer;
@@ -81,11 +81,7 @@ hr {
  .product-container:hover {
     box-shadow: 0px 3px 28px 0px rgb(0 0 0 / 20%);
  }
-.last {
-    margin-right: auto;
-    margin-left: 1em;
 
-}
  .product-image {
     display: block;
     margin: 1em auto;
@@ -120,13 +116,16 @@ hr {
 .price_actual {
     font-size: 26px;
     font-weight: 500;
-    color: #ef6c00;
+    color: #fd1c1c;
 }
 .price_irrelevant {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     text-decoration: line-through;
-    color: #a0a0a0;
+    color: #ef6c00;
+}
+.no_promo {
+    color: #ef6c00;
 }
 .product-btn{
     border: none;
@@ -163,5 +162,8 @@ hr {
     }
     .price-container {
         padding-left: 1em !important;
+    }
+    .promotion-wrapper {
+        justify-content: center;
     }
 }

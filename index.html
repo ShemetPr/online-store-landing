@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/adaptive_mobile.css">
-    <link rel="stylesheet" href="css/popup-windows.css">
+    <link rel="stylesheet" href="css/popup-windows.css?v4">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery-3.6.0.js"></script>
     <title>STORECITY.BY</title>
@@ -156,7 +156,8 @@
                         <li class="slide-description_text">Функция быстрого подключения</li>
                     </ul>
                     <div class="price-container">
-                        <div class="price_actual">94 BYN</div>
+
+                        <div class="price_actual no_promo">94 BYN</div>
                         <!--<div class="price_irrelevant">1109 BYN</div>-->
                     </div>
                     <form action="html-pages/pods.html">
@@ -167,10 +168,11 @@
                 <!--<a class="next" onclick="plusSlides(1)">&#10095;</a>-->
                 </div>
             </div>
+            
             <div class="slide_1 mySlides fade" >
                 <div class="slide-flex-wrapper">
                 <div class="slide-description">
-                    <h2 class="slide_title">Smart Watch X7 PRO</h2>
+                    <h2 class="slide_title">Smart Watch</h2>
                     <ul class="slide-description-text_wrapper">
                         <li class="slide-description_text">Пульсометр, шагомер, тонометр</li>
                         <li class="slide-description_text">Разнообразные спортивные режимы</li>
@@ -179,6 +181,7 @@
                         <li class="slide-description_text">Управление камерой и музыкой</li>
                     </ul>
                     <div class="price-container">
+                        <img class="fire-icon" src="images/fire.png" alt="fire">
                         <div class="price_actual">190 BYN</div>
                         <div class="price_irrelevant">560 BYN</div>
                     </div>
@@ -200,8 +203,9 @@
                         <li class="slide-description_text">Пыле- и влагозащита</li>
                     </ul>
                     <div class="price-container">
+                        <img class="fire-icon" src="images/fire.png" alt="fire">
                         <div class="price_actual">160 BYN</div>
-                        <div class="price_irrelevant">489 BYN</div>
+                        <div class="price_irrelevant">380 BYN</div>
                     </div>
                     <form action="html-pages/portable-speaker.html">
                         <button class="catalog_btn">Перейти к товару &rarr;</button>
@@ -222,6 +226,7 @@
                         <li class="slide-description_text">Не тянет и не дёргает тяжелые и густые волосы</li>
                     </ul>
                     <div class="price-container">
+                        <img class="fire-icon" src="images/fire.png" alt="fire">
                         <div class="price_actual">39 BYN</div>
                         <div class="price_irrelevant">69 BYN</div>
                     </div>
@@ -235,14 +240,38 @@
             <div class="slide_1 mySlides fade">
                 <div class="slide-flex-wrapper">
                 <div class="slide-description">
+                    <h2 class="slide_title">Robot sweeping</h2>
+                    <ul class="slide-description-text_wrapper">
+                        <li class="slide-description_text">Интеллектуальный датчик против падения</li>
+                        <li class="slide-description_text">Планирование маршрута </li>
+                        <li class="slide-description_text">Мобильное приложение</li>
+                        <li class="slide-description_text">Резервуар для воды с постоянным давлением</li>
+                        <li class="slide-description_text">Резервуар для воды с постоянным давлением</li>
+                    </ul>
+                    <div class="price-container">
+                        <img class="fire-icon" src="images/fire.png" alt="fire">
+                        <div class="price_actual">279 BYN</div>
+                        <div class="price_irrelevant">690 BYN</div>
+                    </div>
+                    <form action="html-pages/vacuum-cleaner.html">
+                        <button class="catalog_btn">Перейти к товару &rarr;</button>
+                    </form>
+                </div>
+                <img class="catalog-item_image" src="images/catalog-images/swipper-1.png" alt="trimmer">
+                </div>
+            </div>
+            <div class="slide_1 mySlides fade">
+                <div class="slide-flex-wrapper">
+                <div class="slide-description">
                     <h2 class="slide_title">Триммер для животных</h2>
                     <ul class="slide-description-text_wrapper">
-                        <li class="slide-description_text">Предназначена для стрижки и грумминга, тримминга домашних питомцев</li>
+                        <li class="slide-description_text">Предназначена для стрижки и грумминга, тримминга <br>домашних питомцев</li>
                         <li class="slide-description_text">В комплектации имеются сменные насадки</li>
                         <li class="slide-description_text">Насадки подходят для любых видов и длины шерсти</li>
                         <li class="slide-description_text">Питание от аккумулятора/li>
                     </ul>
                     <div class="price-container">
+                        <img class="fire-icon" src="images/fire.png" alt="fire">
                         <div class="price_actual">39 BYN</div>
                         <div class="price_irrelevant">69 BYN</div>
                     </div>
@@ -256,6 +285,7 @@
         </div>  
         <div class="slider-dotts">
             <span class="slider-dotts-item _tagged demo"></span>
+            <span class="slider-dotts-item demo"></span>
             <span class="slider-dotts-item demo"></span>
             <span class="slider-dotts-item demo"></span>
             <span class="slider-dotts-item demo"></span>
@@ -342,8 +372,7 @@
         </div>
         <div class="footer-block-2">
             <p class="footer-block-2-text">ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2022</p>
-            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478, Сморгонь.<br>
-                Р/с - BY91AKBB30130000534960000000 ЦБУ №514 ОАО АСБ Беларусбанк
+            <p class="footer-block-2-text">ИП Конюшенко Ростислав Владимирович, УНП 591824478
             </p>
         </div>
         <div class="footer-icons">
@@ -356,7 +385,7 @@
     ==================================-->
     <div class="popup-window" id="modal-1">
         <div class="popup-window_wrapper">
-            <img class="popup-item_image" src="images/vacuum-cleaner.png" alt="vacuum-cleaner">
+            <img class="popup-item_image" src="images/background-image.png" alt="vacuum-cleaner">
             <p class="popup-window_title">
                 Заполните и отправьте форму и наш менеджер свяжется с Вами для уточнения деталей заказа! 
             </p>
